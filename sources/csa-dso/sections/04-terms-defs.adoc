@@ -1,0 +1,18 @@
+
+== Terms and definitions
+For the purposes of this document, the terms and definitions given in ISO 27000 and the following apply.
+
+=== DevOps
+Application of software development methodologies to infrastructure operations.
+
+=== DevOpsSec
+Application of information security principles and practices to protect processes that utilize DevOps
+culture, practices, and workflows
+
+=== DevSecOps (DSO)
+The integration of continuous security principles, processes, and technologies into DevOps culture,
+practices, and workflows
+
+=== SecDevOps
+Application of DevOps culture, practices, and workflows for the achievement of information security
+and compliance management

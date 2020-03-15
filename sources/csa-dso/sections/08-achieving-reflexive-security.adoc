@@ -1,0 +1,190 @@
+
+== Achieving Reflexive Security
+
+=== General
+Reflexive Security can be considered as the amalgamation and integration of the DevSecOps, DevOpsSec
+and SecDevOps practices, placed within a holistic framework. These areas of practice all derive from the
+integration of security and DevOps principles, together with essential concepts from Agile.
+
+Concepts made apparent by Agile software development practices (where "`Agile`" is the generic term
+including practices like Scrum), such as incremental development, collaborative authoring, test- or
+behavior-driven programming, and continuous integration, have given rise to infrastructure operation
+practices such as continuous delivery, software-defined infrastructure and infrastructure automation.
+
+These infrastructure-related practices are widely considered to be part of the "`DevOps`" repertoire,
+but with several conflicting definitions of what exactly the term represents, it is necessary to clarify
+and standardize its definition in order to evaluate and address its information security impact footnote:[For example, the Wikipedia article on DevOps defines it as "`a set of practices that emphasizes the collaboration and communication of both software developers and information technology (IT) professionals while automating the process of software delivery and infrastructure changes`". This definition is too vague for evaluating the impact of DevOps on information security practices.].
+
+Its practices can entail different processes and outcomes depending on organizational context.
+Its processes could provide organizational-wide benefits through empowering integration and
+interaction between development and operations (e.g., the "`build`" and "`run`" processes), or in some
+cases, have minimal impact in complex enterprise teams where logistics and governance controls
+limits the application of DevOps footnote:[https://devops.com/enterprise-devops-doesnt-make-sense/].
+
+The application of Agile and DevOps practices and related tools clearly have blended borders
+between software development and service infrastructure automation. Information security
+management and operations can benefit from an identical approach, with even tighter integration
+since it already depends on both software development and infrastructure automation.
+
+The practices of DevSecOps, DevOpsSec and SecDevOps, as described below, provide necessary
+insights for the achievement of Reflexive Security.
+The three major aspects of how Agile and DevOps principles can help achieve Reflexive Security for
+information security management are shown below:
+
+* The impact of DevOps practices on information security
+* The application of DevOps to security operations
+* The implementation of information security processes and compliance delivery through DevOps
+
+
+=== Securing DevOps practices
+
+==== GENERAL
+While DevOps practices can help improve the management and operations of information security
+processes in an organization, the execution of these practices have to be secured. Specifically,
+organizations have to ensure that DevOps practices introduced do not compromise information
+security. This aspect has been called "`DevOpsSec`", or "`DevOps security`". DevOps practices strongly
+impact existing infrastructure and operations on it. Inherent security requirements in DevOps
+processes must be considered in the adoption of DevOps within an organization.
+
+==== IMPLICATIONS
+A software-defined infrastructure is highly beneficial for the experienced infrastructure engineer, where software-defined instances, containers, and network devices are programmatically created or destroyed through fingertips on the keyboard.However, it is equally true that a novice engineer could have his fingertips spin things out of control.
+
+Security vulnerabilities can be inadvertently created due to lack of consideration of all aspects surrounding the infrastructure, for example, lax firewall rulesets, default credentials or an increased attack surface. While software development and infrastructure operation skills are closely related, mastery in one may not necessarily translate into proficiency of the other.
+
+
+==== EXAMPLE PRACTICES
+
+* Infrastructure
+** Security baseline checking on software-defined infrastructure
+** Automated security checks on DevOps infrastructure
+
+* Containers
+** Security baseline checking
+** Automated hardening and management
+** Vulnerability checks and file scans
+** Automated integrity and authenticity checking
+
+* Operating Systems / VM images
+** Automatic hardening during provisioning
+** Automated integrity and authenticity checking
+
+* Secure Coding and Testing
+** In-field compliance testing
+
+* Release Management
+** Automated vulnerability scans integrated with development and deployment workflow
+
+* Business Continuity
+** Automated business continuity drills
+** Automated tests for backup and restore processes
+
+* SSL Certificates and Public Key Infrastructure
+** Verification of certificate source and validity
+** Automated testing to ensure validity of issuer
+
+* Identity and Access Management
+** Verification of account usage
+** Continuous scans for inactive or suspicious accounts
+
+* Encryption
+** Automated verification of data encryption processes
+
+
+=== Implementing security operations through DevOps
+
+==== GENERAL
+DevOps provides powerful concepts that link development and infrastructure operations, and its practices can be integrated to facilitate the achievement of information security within an organization. The field of "`DevSecOps`", or "`DevOps for Security Operations`", applies DevOps concepts to enhance the efficiency and effectiveness of information security processes. Its aim is to facilitate the comparable paradigm shift of DevOps on infrastructure operations to security operations, through the integration with development and infrastructure operations.
+
+==== IMPLICATIONS
+On a tactical level, DSO represents the integration and automation of security controls through DevOps using automated toolchains. The CSO sets the policies following organizational goals, requirements and risk management, which could be applied programmatically.
+
+==== EXAMPLE PRACTICES
+* Infrastructure
+** Immutable infrastructures
+
+* QA
+** Implementation of data masking of data used in development for testing
+
+* Containers
+** Vulnerability scanning during building of container images
+** Patch management of applications and libraries inside containers
+** Hardening / secure configuration, self-healing
+** PKI / Digital signatures
+** Anti-virus scan during building of container images
+** Certify container images
+** Scan for embedded keys, hardcoded credentials, push for role based access technology,
+licensing compliance
+** Cryptographically sign and certify container images
+** Runtime container security delivered by monitoring container activities
+
+* Operating Systems / VM images
+** Vulnerability scanning during building of VM images
+** Patch management of applications and libraries of the operating system
+** Hardening / secure configuration, self-healing
+** Anti-virus scan during building of VM images
+** Cryptographically sign and certify VM images
+
+* Secure Coding and Testing
+** Inline analysis of code against top 10 OWASP vulnerabilities and provide real time
+feedback to developer
+** Static code analysis after code commits, builds or releases
+** Scanning for embedded keys, hardcoded credentials, push for role based access
+
+* Release Management
+** Create new public/private keys for each release
+** Release approvals
+** Security / compliance exception management based on the thresholds
+** Only accept signed/certified container and OS images
+** Revocation of older SSL certificates / private keys / PKI after each release
+
+* Measures
+** Builds failed due to security issues
+** Releases with security exceptions
+** Deployment time and deployment frequency
+** Releases bypassed security checks
+** Code commits
+** Iteration length
+
+=== Securing information security processes with DevOps
+
+==== GENERAL
+The practice of "`SecDevOps`", or "`Security DevOps`", aims to utilize DevOps practices to the
+implementation of information security processes. Similar to how DevOps concepts are able
+to improve the collaborative nature of development and infrastructure operations, SecDevOps
+integrates and facilitates collaboration of development with information security processes. A
+common result is the automation of information security processes (the "`build`"), accompanied by
+allowing development processes to be abreast of security implications and deliverable feedback.
+
+==== IMPLICATIONS
+"`Security as Code`" is not equivalent to security automation because it does not require the "`programmatic`" ability. For example, a scripted application of the DoD Security Technical Implementation Guides (STIG) may still have to be run manually during the installation of a server.
+
+==== EXAMPLE PRACTICES
+
+* Business Continuity
+** Automatic business continuity plan testing through Infrastructure as Code (IaC)
+** Continuous backup and restore testing with data masking
+
+* SSL Certificates and Public Key Infrastructure
+** Monitoring and auto renewal of SSL certificates
+** Testing of expiry dates of SSL certificates
+** Private and public key rotation
+
+* Identity and Access Management
+** Secrets management to effectively manage passwords, keys, API, tokens for application,
+services across IT landscape
+
+* Infrastructure
+** Vulnerability scanning of servers, VMs, containers, appliances during runtime
+** Anti-virus scan during runtime
+
+* Encryption
+** Encryption as a service for data in transit and data at rest
+
+* Measures
+** Test coverage
+** Coverage of unit/integration tests
+** Coverage of functional/acceptance tests
+** CIS Benchmark, Compliance Violations
+** Time taken to achieve compliance for a new application
+** Security issues discovered across stages (aspire to zero at production)
+** Time to fix security issue

@@ -1,0 +1,11 @@
+
+== Scope
+This document defines "`Reflexive Security`" as a new security management approach that is built
+upon the interrelationships between security, development and operations necessary for protecting
+the security stance and the deliverables of an organization.
+
+The benefits of combining security, development and operation practices for integrated
+management are also described.
+
+Several approaches to Reflexive Security are suggested to resolve the availability gap of cyber
+security professionals.

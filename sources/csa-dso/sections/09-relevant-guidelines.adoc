@@ -1,0 +1,42 @@
+
+== Relevant guidelines for implementing Reflexive Security
+
+=== General
+This clause provides some guidelines for organizations for the implementation of Reflexive Security.
+The guidelines below are meant to be indicative, not exhaustive.
+
+=== Culture Shock
+The goal of DevOps has been to write code and move product into production as fast as possible
+while maintaining a single source of truth, and removing or sidelining any barriers to their progress.
+The goal of security has always been too protect the organization internally and externally from
+access. Individually the goals are admirable until it gets to the point where DevOps deploys insecure
+software or security delays deployments to the point where the organization's goals are affected.
+
+Embedding Security into DevOps can be a shock to the traditional system. Plan to deal with the
+issues of DevOps and Security working closely with common goals and metrics. Plan for the personal
+effects of automation: changed, lost and or new positions.
+
+=== Cross-train
+Form an operational security function by selecting key persons that have an interest or background in
+security from each team and delegate security related tasks to those individuals. Make these persons
+a representative of the operational security teams.
+
+The operational security teams know exactly what types of operating systems are used, applications
+are supported for the business, etc. In some organizations, this collaboration involves embedding IT
+operations specialists within software development teams, thus forming a cross-functional team.
+This effort may also be combined with a skills matrix.
+
+=== Delegate
+Delegate risk management, maintenance of BCPs etc. to department heads. Freeing up resources of
+the dedicated security team so they can focus on the security process management and providing
+the framework(s). The department heads know exactly what they have in house, what risks there are.
+
+Reflexive Security is process neutral. Organizations can use Agile, Scrum or any other development
+methodology. Have security engineers attend daily scrum meetings, make them part of the team.
+
+=== Automate with purpose
+One of the primary rules of DevSecOps is to automate early and often with the goal to embed
+security into the process but don't try to automate everything at once. Select those areas that will
+address the greatest risk for automation first. Also choose your automation tools using a selection
+method including testing that reflects the specifics of your environment.
+

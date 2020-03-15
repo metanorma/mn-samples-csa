@@ -1,0 +1,16 @@
+
+== Conclusion
+Reflexive Security is a newer information security management strategy that is dynamic, interactive,
+holistic, and effective. It represents an integrated culture extrapolated from the amalgamation of
+DevSecOps, DevOpsSec and SecDevOps concepts and practices, and promotes the exemplary
+contexts from which those best practices were derived from.
+
+Reflexive Security provides a set of wide-implicating and easily understandable principles that
+affect an organization's cybersecurity posture, especially suitable for operating under resource and
+personnel constraints in today's fast-paced and challenging cybersecurity landscape.
+
+The implementation of DevSecOps, DevOpsSec and SecDevOps concepts and practices in an
+organization provides an excellent start in attaining the benefits of Reflexive Security. It is also
+straightforward for organizations that utilize Reflexive Security to formally adopt an ISMS as
+appropriate, by integrating ISMS processes as part of the Reflexive Security strategy.
+

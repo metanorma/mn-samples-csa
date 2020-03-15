@@ -1,0 +1,48 @@
+
+== Introduction
+
+=== Background
+In today's hyper-competitive context with increasing cybersecurity threats, especially in the cloud, organizations are under strong pressure to streamline information security management processes. The age-old problem of resource limitations is exacerbated -- the tradition of information security management systems (ISMS) is seemingly too rigid in structure, yet inadequate in responsiveness to
+new needs.
+
+Organizations today are faced with a number of information security management issues, including:
+
+* Spiralling compliance governance costs;
+* Global shortage of information security professionals, forcing more efficient utilization of staff;
+* The notable disconnect between strategic security and operational security.
+
+All of these factors pressure an organization's information security processes to deliver more for less.
+
+
+=== Learning from the Collaborative Philosophy
+DevOps, the practice of applying developmental best practices such as collective collaboration to
+infrastructure operations, has been shown to positively impact efficiencies of development and
+operations teams today, especially in the cloud environment.
+
+Given its strengthening adoption, it is necessary to consider its impact on information security itself
+and look to apply those practices to the arena of information security management.
+
+Distilling from the cultural and philosophical elements of such collaborative practices, as well as from
+the exemplary contexts where those practices were derived from, six major principles are described
+in this document to demonstrate the principles of achieving
+
+=== Application to security
+DevOps is now broadly practiced but it has been generally separated from security practices. There
+is currently no standardized term in industry that cater to this aspect. A number of terms have been
+proposed by members of the community, including "`DevOpsSec`", "`DevSecOps`", "`SecDevOps`", to explain
+the intersection of security and DevOps, as well as the amalgamation of security, development and
+operations practices.
+
+These terms have been used interchangeably, but the meanings they convey can be vastly different.
+The definitions of these terms can also widely conflict with each other depending on the particular
+understanding of the reader. Moreover, there is no industry recognized definition for security automation,
+which is a core concept to the application of DevOps practices to security operations, leading to
+confusion and misinterpretations. It is therefore crucial to clarify and standardize such terms for a global
+and wider industry audience.
+
+=== Target Audience
+The target audience of this document includes those involved in the management and operational
+functions of risk, information security and information technology. This includes the C-suite (CISO,
+CIO, CTO, CRO, COO, CEO), and especially to the individuals involved in the following functional
+areas: automation, DevOps, quality assurance, InfoSec, governance, risk management and
+compliance.

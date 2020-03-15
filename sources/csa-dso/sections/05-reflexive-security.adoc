@@ -1,0 +1,49 @@
+
+== Reflexive Security
+
+=== General
+Reflexive Security is an approach for information security management built upon the principles
+of Agile and DevOps. It is a non-prescriptive framework that is purely needs-based, emphasizes
+collective responsibility, and considers information security and its responses to be a holistic
+function of the organization.
+
+The word "`Reflexive`" is used for its meaning from the reflexive relation in mathematical sets, where
+every element in a such a relation is related to itself. In Reflexive Security, every action taken is
+related to the context and needs of the organization itself.
+
+Reflexive Security emphasizes security across organizational roles that reacts to external and internal
+threats in an agile and dynamic way. It aims to be a new information security management strategy
+that is dynamic, interactive, effective and holistic.
+
+=== Relationship with ISMS
+Comparing to the traditional Information Security Management System (ISMS) approach, Reflexive
+Security aims to follow a similar spirit as Agile software development when compared to the
+Waterfall mindset.
+
+Reflexive Security treasures dynamic information exchange within the organization. Like the
+immune system of the human body, information is immediately propagated to adjacent, potentially
+vulnerable functions given detection of a threat. A traditional ISMS approach is top-down: it requires
+threat information to be reported back to the higher functions, before any response can be made. In
+Reflexive Security, organization functions themselves are already integrated with security functions,
+and can provide an immediate response to address potential impact. A centralized response is
+important, but should not prohibit an immediate tactical approach.
+
+The ISMS approach is about adopting best practices. However, often best practices that work in
+larger organizations do not work with smaller ones. In fact, they can create an unnecessary burden
+for smaller organizations, taking away precious time and effort and hence negatively affecting their
+information security stances.
+
+Reflexive Security also alleviates the security skills shortage paradox by promoting the idea of “hybrid
+domain-security experts”, by delegating risks and security responsibilities to organization functions.
+
+Top leadership commitment as required in an ISMS, while crucial, is insufficient. Top leadership has to
+understand the nature of information security and needs to be committed to integrating information
+security into each and every aspect of the organization. Top leadership must be themselves
+integrated into the information security function -- fully understanding the risks and threats the
+organization faces (its risk profile) with regards to information security, setting clear bounds and
+requirements for personnel to adhere to.
+
+The human link is often the weakest link in information security. Phishing, social engineering are
+all techniques to trick an unsuspecting individual to voluntarily compromise the security of an
+organization. Without full and active participation of the involved individuals, beyond awareness,
+information security simply cannot be achieved.

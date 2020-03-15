@@ -1,0 +1,31 @@
+= Information Security Management through Reflexive Security -- Six Pillars in the Integration of Security, Development and Operations
+:doctype: standard
+:committee: technical
+:fullname: Ronald Tse
+:fullname_2: Michael Roza
+:fullname_3: Sean Heide
+:fullname_4: David Lewis
+:fullname_5: Eric Gauthier
+:role: editor
+:docnumber: csa-01
+:copyright-year: 2019
+:mn-document-class: csa
+:status: published
+:language: en
+:docfile: document.adoc
+:imagesdir: images
+
+
+include::sections/01-introduction.adoc[]
+include::sections/02-scope.adoc[]
+include::sections/03-norm-refs.adoc[]
+include::sections/04-terms-defs.adoc[]
+include::sections/05-reflexive-security.adoc[]
+include::sections/06-six-pillars.adoc[]
+include::sections/07-six-benefits.adoc[]
+include::sections/08-achieving-reflexive-security.adoc[]
+include::sections/09-relevant-guidelines.adoc[]
+include::sections/10-conclusion.adoc[]
+
+
+

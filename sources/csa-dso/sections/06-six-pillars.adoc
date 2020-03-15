@@ -1,0 +1,58 @@
+
+== Six Pillars Supporting Reflexive Security
+
+=== General
+The six pillars can be abbreviated into the acronym RAMPAC (Responsible collectively, Automate,
+Measure, Pragmatic, Align and bridge, Collaborate and integrate).
+
+=== Responsible collectively
+Security leadership plays a shepherding role for information security within an organization.
+However, everyone is responsible for an organization's security. Each individual has their own security
+responsibility, and they must be aware of their own contribution (and potential problems) towards
+the organization's security stance. Edge users not only have to be security-aware, they are the first
+line of defence for the organization.
+
+=== Pragmatic
+Security should provide value, not a hindrance. For every security initiative or adopted security
+control, a cost-benefit should be prepared demonstrating the value of security. Without a pragmatic
+approach, it is easy for persons unaware of the benefits of security to dismiss security practices
+as mere overhead or unnecessary. A pragmatic approach provides crucial information in building
+business case evidence to convince stakeholders of the importance of security, giving them
+confidence that plans will be executed faithfully.
+
+The traditional ISMS approach relies on a best practices approach which could easily lead to
+overhead. Rarely are organizations not resource-constrained, and it is necessary to balance tailoring
+requirements to the organization against the adoption of best practices. Requirements must be
+based on organizational risks and value for maximum effectiveness.
+
+=== Align and bridge
+Organizational risks and requirements must be fully aligned in order to derive maximum effectiveness
+and value from security processes. Security requirements that misalign with organizational risks
+represent resources potentially wasted, or worse, attention that has been taken away from critical
+matters that could cause organizational harm. By carefully aligning requirements throughout the
+organizational context, such as contractual, regulatory, product, security and compliance requirements,
+it is possible to extract maximum value by condensing a set of core requirements for the organization,
+allowing the delegation of risk management at more tactical levels for more dynamic responses and
+efficient usage of resources.
+
+=== Automate
+Automated security practices are the core of optimizing process efficiency. Processes that can be
+automated should be automated, and those that can't should be transformed. Automation also
+creates its own set of problems but automated approaches to those problems are often possible.
+A mantra in software development says, if one does the same thing three times, it will be time to
+program it. This approach applies squarely to Reflexive Security.
+
+=== Measure and improve
+Performance that cannot be measured cannot be improved. Without measurements, there is no
+understandable evidence whether information security management is effective. Reflexive Security
+is about achieving results, and the results must be measurable for transparency and improvement.
+
+=== Collaborate and integrate
+Security can only be achieved through collaboration, not confrontation. A security aware and
+collaborative culture is necessary for everyone to feel comfortable reporting potential anomalies. The
+human factor is often the weakest link -- most security incidents are caused by inadvertent human error.
+Security must be integrated into every aspect of business. Dedicated security personnel rarely have
+in-depth business domain expertise. No one else knows the business domain and its risks as well as
+those responsible for it. A team of dedicated security experts are likely oblivious of domain-specific
+security issues. Domain knowledge and security knowledge must be fused and co-exist in every
+organizational process for effective security management.
