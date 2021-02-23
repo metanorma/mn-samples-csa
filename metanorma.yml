@@ -1,7 +1,5 @@
 ---
 metanorma:
-  deploy:
-    email: "ci@metanorma.org"
   source:
     files:
       - sources/csa-dso/document.adoc
