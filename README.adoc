@@ -1,0 +1,4 @@
+= Metanorma-CSA sample documents
+
+image:https://github.com/metanorma/mn-samples-csa/workflows/generate/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-csa/actions?query=workflow%3generate"]
+image:https://github.com/metanorma/mn-samples-csa/workflows/docker/badge.svg["Docker Build Status", link="https://github.com/metanorma/mn-samples-csa/actions?query=workflow%3Adocker"]
