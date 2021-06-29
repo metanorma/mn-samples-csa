@@ -1,0 +1,65 @@
+/__w/mn-samples-csa/mn-samples-csa/site/documents/csa-dso/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000090): Hanging paragraph in clause
+	<introduction id="_introduction" obligation="informative"><title>Introduction</title><clause id="_background" obligation="informative"><title>Background</title><p id="_ed8bc932-77a4-4a93-9944-552195e748a1">In today’s hyper-competitive context with increasing cybersecurity threats, especially in the cloud, organizations are under strong pressure to streamline information security management processes. The age-old problem of resource limitations is exacerbated — the tradition of information security management systems (ISMS) is seemingly too rigid in structure, yet inadequate in responsiveness to
+	new needs.</p>
+	<p id="_b1684d9f-ffab-49ad-b3a4-e6d3b11b25fc">Organizations today are faced with a number of information security management issues, including:</p>
+	<ul id="_5594a611-cce9-4f30-945d-2258301d498f">
+	<li>
+(XML Line 000163): Hanging paragraph in clause
+	<clause id="_reflexive_security" obligation="normative"><title>Reflexive Security</title><clause id="_general" obligation="normative"><title>General</title><p id="_669488e0-4c7b-4153-b146-ac2bd45f6931">Reflexive Security is an approach for information security management built upon the principles
+	of Agile and DevOps. It is a non-prescriptive framework that is purely needs-based, emphasizes
+	collective responsibility, and considers information security and its responses to be a holistic
+	function of the organization.</p>
+	<p id="_d452900e-ae7e-4f85-81cb-3ec714a879ec">The word “Reflexive” is used for its meaning from the reflexive relation in mathematical sets, where
+(XML Line 000199): Hanging paragraph in clause
+	<clause id="_six_pillars_supporting_reflexive_security" obligation="normative"><title>Six Pillars Supporting Reflexive Security</title><clause id="_general_2" obligation="normative">
+	<title>General</title>
+	<p id="_63a097e0-7b46-43e3-9218-5d2f6ff95fe6">The six pillars can be abbreviated into the acronym RAMPAC (Responsible collectively, Automate,
+	Measure, Pragmatic, Align and bridge, Collaborate and integrate).</p>
+	</clause>
+(XML Line 000258): Hanging paragraph in clause
+	<clause id="_six_benefits_of_reflexive_security" obligation="normative"><title>Six Benefits of Reflexive Security</title><clause id="_general_3" obligation="normative">
+	<title>General</title>
+	<p id="_625eaa35-806a-4a31-8a94-f87666722d29">The six benefits can be explained with the acronym HEARTY (Human-centric, Elastic, Apt and
+	holistic, Resilient, Tailored, Dynamic).</p>
+	</clause>
+(XML Line 000301): Hanging paragraph in clause
+	<clause id="_achieving_reflexive_security" obligation="normative"><title>Achieving Reflexive Security</title><clause id="_general_4" obligation="normative"><title>General</title><p id="_a826ffcc-1759-479f-b5e0-4c93ee9aa57b">Reflexive Security can be considered as the amalgamation and integration of the DevSecOps, DevOpsSec
+	and SecDevOps practices, placed within a holistic framework. These areas of practice all derive from the
+	integration of security and DevOps principles, together with essential concepts from Agile.</p>
+	<p id="_01ca41c2-df1d-429e-b910-7d3f74d42e7a">Concepts made apparent by Agile software development practices (where “Agile” is the generic term
+	including practices like Scrum), such as incremental development, collaborative authoring, test- or
+(XML Line 000335): Hanging paragraph in clause
+	<clause id="_securing_devops_practices" obligation="normative"><title>Securing DevOps practices</title><clause id="_general_5" obligation="normative">
+	<title>GENERAL</title>
+	<p id="_72330e09-a097-4e35-84ba-15c62fcb8d65">While DevOps practices can help improve the management and operations of information security
+	processes in an organization, the execution of these practices have to be secured. Specifically,
+	organizations have to ensure that DevOps practices introduced do not compromise information
+(XML Line 000447): Hanging paragraph in clause
+	<clause id="_implementing_security_operations_through_devops" obligation="normative"><title>Implementing security operations through DevOps</title><clause id="_general_6" obligation="normative">
+	<title>GENERAL</title>
+	<p id="_941e3c9c-2d38-4791-b2e2-1208839248d2">DevOps provides powerful concepts that link development and infrastructure operations, and its practices can be integrated to facilitate the achievement of information security within an organization. The field of “DevSecOps”, or “DevOps for Security Operations”, applies DevOps concepts to enhance the efficiency and effectiveness of information security processes. Its aim is to facilitate the comparable paradigm shift of DevOps on infrastructure operations to security operations, through the integration with development and infrastructure operations.</p>
+	</clause>
+	<clause id="_implications_2" obligation="normative">
+(XML Line 000587): Hanging paragraph in clause
+	<clause id="_securing_information_security_processes_with_devops" obligation="normative"><title>Securing information security processes with DevOps</title><clause id="_general_7" obligation="normative">
+	<title>GENERAL</title>
+	<p id="_1c11dc0b-df3d-42e8-9c8d-f9ef7d72a101">The practice of “SecDevOps”, or “Security DevOps”, aims to utilize DevOps practices to the
+	implementation of information security processes. Similar to how DevOps concepts are able
+	to improve the collaborative nature of development and infrastructure operations, SecDevOps
+(XML Line 000684): Hanging paragraph in clause
+	<clause id="_relevant_guidelines_for_implementing_reflexive_security" obligation="normative"><title>Relevant guidelines for implementing Reflexive Security</title><clause id="_general_8" obligation="normative">
+	<title>General</title>
+	<p id="_47edf4da-9173-4ed9-8bcb-8c360def7cb5">This clause provides some guidelines for organizations for the implementation of Reflexive Security.
+	The guidelines below are meant to be indicative, not exhaustive.</p>
+	</clause>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000088:7): element "ext" incomplete; missing required element "editorialgroup"
+(XML Line 000187:33): value of attribute "id" is invalid; must be an XML name without colons
