@@ -1,11 +1,11 @@
-<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>CSA documents in Metanorma</title><contributor><role type='author'/><organization><name>CSA</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Information Security Management through Reflexive Security — Six Pillars in the Integration of Security, Development and Operations</title>
   <uri type="xml">documents/csa-dso/document.xml</uri>
   <uri type="pdf">documents/csa-dso/document.pdf</uri>
   <uri type="doc">documents/csa-dso/document.doc</uri>
   <uri type="html">documents/csa-dso/document.html</uri>
   <uri type="rxl">documents/csa-dso/document.rxl</uri>
-  <docidentifier type="CSA">csa-01:2019</docidentifier>
+  <docidentifier type="CSA" primary="true">csa-01:2019</docidentifier>
   <docnumber>csa-01</docnumber>
   <contributor>
     <role type="author"/>
