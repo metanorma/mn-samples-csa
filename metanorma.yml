@@ -3,3 +3,7 @@ metanorma:
   source:
     files:
       - sources/csa-dso/document.adoc
+
+  collection:
+    organization: "CSA"
+    name: "CSA documents in Metanorma"
