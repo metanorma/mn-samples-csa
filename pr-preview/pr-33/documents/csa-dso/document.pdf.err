@@ -1,0 +1,5 @@
+WARNING: Font file '/github/home/.metanorma/fonts/AzoSans-Regular.ttf' (font family 'Azo Sans', style 'normal', weight 'normal/400') doesn't exist. Replaced by 'NotoSans-Regular' (/github/home/.metanorma/fonts/NotoSans-Regular.ttf).
+WARNING: Font file '/github/home/.metanorma/fonts/AzoSans-Bold.ttf' (font family 'Azo Sans', style 'normal', weight 'bold/700') doesn't exist. Replaced by 'NotoSans-Bold' (/github/home/.metanorma/fonts/NotoSans-Bold.ttf).
+WARNING: Font file '/github/home/.metanorma/fonts/AzoSans-Italic.ttf' (font family 'Azo Sans', style 'italic', weight 'normal/400') doesn't exist. Replaced by 'NotoSans-Italic' (/github/home/.metanorma/fonts/NotoSans-Italic.ttf).
+WARNING: Font file '/github/home/.metanorma/fonts/AzoSans-BoldItalic.ttf' (font family 'Azo Sans', style 'italic', weight 'bold/700') doesn't exist. Replaced by 'NotoSans-BoldItalic' (/github/home/.metanorma/fonts/NotoSans-BoldItalic.ttf).
+

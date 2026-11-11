@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="3.5.2" schema-version="v2.3.0" flavor="csa">
+<bibdata type="standard">
+<title language="en" type="main">Information Security Management through Reflexive Security — Six Pillars in the Integration of Security, Development and Operations</title>
+<docidentifier primary="true" type="CSA">csa-01:2019</docidentifier><docnumber>csa-01</docnumber><contributor><role type="author"/><organization>
+<name>Cloud Security Alliance</name>
+<abbreviation>CSA</abbreviation><logo><image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/csa/logo.svg" mimetype="image/svg+xml"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0" style="enable-background:new 0 0 500 178.3" version="1.1" viewBox="0 0 500 178.3">
+  <style>.st0_inject_0 {fill:#00549f}.st1_inject_0 {fill:#f98526}</style>
+  <g id="Art_inject_0">
+    <path d="M26.8 94c-.3 1.2-.5 2.4-.6 3.6-1.9 12.8.9 23 11.4 23 7.7 0 11.5-3.9 17.5-11.9l19 10.4c-7.5 11-18.9 21.7-39.8 21.7C8.2 140.8-3 122.4.7 97.5l.6-3.6c0 .1 25.5.1 25.5.1zM4.1 84.5c7.3-19.1 23.7-30.3 43.2-30.3 21.6 0 28.8 8.9 32.6 24.7l-23.3 8.3c-2-7.8-4.3-12.7-12.3-12.7-6.4 0-11.1 3.8-14.2 10h-26zM144.7 94c6.7 4.4 9.3 10.5 7.9 19.8-2.8 19.2-19.2 27.1-40.3 27.1-14.2 0-27.2-4.4-35.6-10.2l14.5-18.3c5.8 4.2 16.4 8.4 24.5 8.4 8.7 0 11.6-1.4 12.2-5.4.5-3.1-2.4-5-13.8-7.7-13.8-3.2-22.6-6.6-26-13.7h56.6zm-58.4-9.5c.1-1.2.2-2.5.4-3.8 2.3-15.8 17.4-26.5 38.6-26.5 14.9 0 25.2 3.5 33.6 9.7l-14.5 18.2c-7-5-14.4-7.9-23.3-7.9-7.3 0-9.4 2.2-9.8 5.2-.3 2.3 1.1 3.6 6 5.2h-31v-.1zM215.8 84.6l-5.2-29.1h-21.2l-13.8 29.1zM186.1 106.3h12.6l-1.4-12.4h20.2l8.2 45.6H203l-1.9-14.7h-22.7l-6.3 14.7h-22.5L171.2 94h20.1z" class="st0_inject_0"/>
+    <path d="M214.8 17.7c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.7-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.2zM222.7 41.4l6-39 5.2-2.4-6.4 41.5-4.8-.1zM249.8 42c-8.3 0-13.7-5.4-12.2-15.5 1.6-10.1 9-15.6 17.3-15.6s13.8 5.2 12.2 15.4c-1.6 10.1-9 15.7-17.3 15.7zm4.4-27.4c-5.9 0-10.4 3.9-11.6 11.8s2.1 11.9 7.9 11.9c5.8 0 10.5-4.1 11.7-11.9 1.3-7.8-2.1-11.8-8-11.8zM293.3 41.4l.6-3.6c-2.3 2.5-5.7 4.3-10 4.3-7.2 0-11.3-3.7-10-12.3l2.8-18.2h4.8L278.9 29c-1 6.4 1.2 9.3 6.6 9.3 4.7 0 8.8-2.8 9.8-9.3l2.7-17.5h4.8l-4.6 29.8h-4.9zM328 41.4l.6-3.6c-2.7 2.3-6.3 4.3-10.8 4.3-6.8 0-11.4-4.5-9.8-15 1.6-10.6 8.2-16 15.3-16 4.3 0 6.9 1.6 8.9 4L334 2.4l5.2-2.4-6.4 41.5-4.8-.1c0 .1 0 0 0 0zm3.4-22.3c-1.5-2.5-4.5-4.5-8.5-4.5-5.6 0-9 4.3-10.3 12.3-1.2 7.5 1.5 11.4 6.8 11.4 3.6 0 6.8-1.7 9.6-4.3l2.4-14.9zM244.8 177.7l.6-3.6c-2.7 2.3-6.4 4.3-11.3 4.3-5.3 0-10.5-2.3-9.4-9.6 1.1-6.7 7.7-9.6 14.5-9.6 3.4 0 6.4.7 8.2 1.7l.5-3.5c.7-4.4-1.4-6.6-6.4-6.6-3.5 0-6.6.8-9.6 2.3l-1.3-3.5c3.2-1.4 7.4-2.4 11.7-2.4 7.3 0 11.5 2.7 10.4 9.7l-3.2 20.8h-4.7zm2-13.4c-2.1-1.1-4.3-1.7-8.5-1.7-4.9 0-8.3 2.1-8.8 5.8-.7 4.4 1.8 6.4 5.9 6.4 4.4 0 8-2 10.4-4.5l1-6zM260.3 177.7l6-39 5.2-2.4-6.4 41.5-4.8-.1zM276.4 177.7l6-39 5.2-2.4-6.4 41.5-4.8-.1zM292.5 177.7l4.6-29.8h4.8l-4.6 29.8h-4.8zm7.9-35.2c-2 0-3.4-1.4-3.1-3 .3-1.7 2.1-3.1 4.1-3.1 1.8 0 3.2 1.4 2.9 3.1-.4 1.6-2.1 3-3.9 3zM327.6 177.7l.6-3.6c-2.7 2.3-6.4 4.3-11.3 4.3-5.3 0-10.5-2.3-9.4-9.6 1.1-6.7 7.7-9.6 14.5-9.6 3.4 0 6.4.7 8.2 1.7l.5-3.5c.7-4.4-1.4-6.6-6.4-6.6-3.5 0-6.6.8-9.6 2.3l-1.3-3.5c3.2-1.4 7.4-2.4 11.7-2.4 7.3 0 11.5 2.7 10.4 9.7l-3.2 20.8h-4.7zm2.1-13.4c-2.1-1.1-4.3-1.7-8.5-1.7-4.9 0-8.3 2.1-8.8 5.8-.7 4.4 1.8 6.4 5.9 6.4 4.4 0 8-2 10.4-4.5l1-6zM364.1 177.7l2.7-17.5c1-6.4-1.2-9.3-6.6-9.3-4.7 0-8.8 2.8-9.8 9.3l-2.7 17.5h-4.8l4.6-29.8h4.8l-.6 3.6c2.3-2.5 5.7-4.3 10-4.3 7.2 0 11.3 3.7 10 12.3l-2.8 18.2h-4.8zM403.6 153.9c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.6-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.3zM437.8 164.2h-22.6c-.5 6.4 2.3 10.4 7.8 10.4 3.9 0 6.4-1 9.8-2.8l1.8 3.1c-4.4 2.3-7.6 3.5-12.7 3.5-6.2 0-13.2-4-11.3-15.7 1.5-9.5 8.3-15.4 16.4-15.4 8.8 0 12.7 6.2 11.4 14.7-.2.9-.4 1.5-.6 2.2zm-11.4-13.3c-5 0-9 3.2-10.6 9.8H434c.5-5.8-1.7-9.8-7.6-9.8zM282.4 106.5c-4.6 0-8.5-1.5-11.4-3.8l3.3-3.1c2.4 2.1 5.4 3.3 8.7 3.3 4.6 0 7.1-1.7 7.6-4.6.4-2.4-1.4-3.8-7-6.1-6.4-2.6-8.9-4.4-8.2-9.2.7-4.5 5.6-7.6 11.8-7.6 4.6 0 8 1.3 10.4 3.2l-3.2 3.1c-2.4-1.8-4.4-2.7-8-2.7-3.6 0-5.8 1.5-6.2 3.7-.4 2.5 1.2 3.5 6.6 5.8 6 2.6 9.5 4.2 8.7 9.6-1.1 5.8-7.3 8.4-13.1 8.4zM330.2 92.4h-22.6c-.5 6.4 2.3 10.4 7.8 10.4 3.9 0 6.4-1 9.8-2.8l1.8 3.1c-4.4 2.3-7.6 3.5-12.7 3.5-6.2 0-13.2-4-11.3-15.7 1.5-9.5 8.3-15.4 16.4-15.4 8.8 0 12.7 6.2 11.4 14.7-.2.9-.4 1.5-.6 2.2zm-11.5-13.3c-5 0-9 3.2-10.6 9.8h18.3c.5-5.8-1.7-9.8-7.7-9.8zM361.4 82.1c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.7-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.2zM388.8 105.8l.6-3.6c-2.3 2.5-5.7 4.3-10 4.3-7.2 0-11.3-3.7-10-12.3l2.8-18.2h4.8l-2.7 17.5c-1 6.4 1.2 9.3 6.6 9.3 4.7 0 8.8-2.8 9.8-9.3l2.7-17.5h4.8l-4.6 29.8h-4.8zM425.4 80.4c-1.3-.7-2.7-1.2-4.9-1.2-4.7 0-7.9 3.4-8.7 9l-2.7 17.5h-4.8l4.6-29.8h4.8l-.6 3.7c1.9-2.4 5.4-4.3 9-4.3 2.5 0 4.1.3 5.2.7l-1.9 4.4zM430.7 105.8l4.6-29.8h4.8l-4.6 29.8h-4.8zm7.9-35.2c-2 0-3.4-1.4-3.1-3 .3-1.7 2.1-3.1 4.1-3.1 1.8 0 3.2 1.4 2.9 3.1-.3 1.7-2 3-3.9 3zM456.7 79.6l-3 19.5c-.4 2.7.3 3.6 2.9 3.6 1.9 0 3.3-.3 4.9-.8l-.9 3.7c-2 .7-3.8 1-6.4 1-4.2 0-6.2-1.8-5.4-6.8l3.1-20.1h-4.2l.6-3.6h4.2l1.4-9.2 5.2-2.4-1.9 11.5h8.4l-.6 3.6h-8.3zM476.9 116.4h-4.8l6.3-10.8-7.5-29.6h5.1l4.9 21.7.7 3.1 1.6-3L494.9 76h5.1l-23.1 40.4zM450.3 148.1c0-3.1 1.1-5.6 3.3-7.8 2.2-2.2 4.8-3.3 7.8-3.3s5.7 1.1 7.8 3.3c2.2 2.2 3.3 4.8 3.3 7.8s-1.1 5.7-3.3 7.8c-2.2 2.2-4.8 3.3-7.8 3.3s-5.7-1.1-7.8-3.3c-2.2-2.1-3.3-4.8-3.3-7.8zm20.3 0c0-2.6-.9-4.7-2.7-6.5-1.8-1.8-4-2.7-6.5-2.7s-4.7.9-6.6 2.7c-1.8 1.8-2.7 4-2.7 6.5s.9 4.7 2.7 6.6c1.8 1.8 4 2.7 6.6 2.7s4.7-.9 6.5-2.7c1.9-1.8 2.7-4 2.7-6.6zm-5.7 6.7-3.5-5.8h-1.9v5.8h-1.9v-13.6h3.5c3.3 0 4.9 1.3 4.9 3.8 0 1.7-.9 3-2.6 3.7l3.7 6.2-2.2-.1zm-5.5-12v4.5c.2 0 .6.1 1.3.1 1.3 0 2.1-.2 2.6-.5.4-.3.6-.9.6-1.8 0-1.5-1-2.3-2.9-2.3h-1.6z" class="st1_inject_0"/>
+  </g>
+</svg></image></logo></organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Ronald Tse</completename></name>
+</person></contributor><contributor><role type="author"/><person>
+<name><completename>Michael Roza</completename></name>
+</person></contributor><contributor><role type="author"/><person>
+<name><completename>Sean Heide</completename></name>
+</person></contributor><contributor><role type="author"/><person>
+<name><completename>David Lewis</completename></name>
+</person></contributor><contributor><role type="author"/><person>
+<name><completename>Eric Gauthier</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Cloud Security Alliance</name>
+<abbreviation>CSA</abbreviation><logo><image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/csa/logo.svg" mimetype="image/svg+xml"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0" style="enable-background:new 0 0 500 178.3" version="1.1" viewBox="0 0 500 178.3">
+  <style>.st0_inject_1 {fill:#00549f}.st1_inject_1 {fill:#f98526}</style>
+  <g id="Art_inject_1">
+    <path d="M26.8 94c-.3 1.2-.5 2.4-.6 3.6-1.9 12.8.9 23 11.4 23 7.7 0 11.5-3.9 17.5-11.9l19 10.4c-7.5 11-18.9 21.7-39.8 21.7C8.2 140.8-3 122.4.7 97.5l.6-3.6c0 .1 25.5.1 25.5.1zM4.1 84.5c7.3-19.1 23.7-30.3 43.2-30.3 21.6 0 28.8 8.9 32.6 24.7l-23.3 8.3c-2-7.8-4.3-12.7-12.3-12.7-6.4 0-11.1 3.8-14.2 10h-26zM144.7 94c6.7 4.4 9.3 10.5 7.9 19.8-2.8 19.2-19.2 27.1-40.3 27.1-14.2 0-27.2-4.4-35.6-10.2l14.5-18.3c5.8 4.2 16.4 8.4 24.5 8.4 8.7 0 11.6-1.4 12.2-5.4.5-3.1-2.4-5-13.8-7.7-13.8-3.2-22.6-6.6-26-13.7h56.6zm-58.4-9.5c.1-1.2.2-2.5.4-3.8 2.3-15.8 17.4-26.5 38.6-26.5 14.9 0 25.2 3.5 33.6 9.7l-14.5 18.2c-7-5-14.4-7.9-23.3-7.9-7.3 0-9.4 2.2-9.8 5.2-.3 2.3 1.1 3.6 6 5.2h-31v-.1zM215.8 84.6l-5.2-29.1h-21.2l-13.8 29.1zM186.1 106.3h12.6l-1.4-12.4h20.2l8.2 45.6H203l-1.9-14.7h-22.7l-6.3 14.7h-22.5L171.2 94h20.1z" class="st0_inject_1"/>
+    <path d="M214.8 17.7c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.7-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.2zM222.7 41.4l6-39 5.2-2.4-6.4 41.5-4.8-.1zM249.8 42c-8.3 0-13.7-5.4-12.2-15.5 1.6-10.1 9-15.6 17.3-15.6s13.8 5.2 12.2 15.4c-1.6 10.1-9 15.7-17.3 15.7zm4.4-27.4c-5.9 0-10.4 3.9-11.6 11.8s2.1 11.9 7.9 11.9c5.8 0 10.5-4.1 11.7-11.9 1.3-7.8-2.1-11.8-8-11.8zM293.3 41.4l.6-3.6c-2.3 2.5-5.7 4.3-10 4.3-7.2 0-11.3-3.7-10-12.3l2.8-18.2h4.8L278.9 29c-1 6.4 1.2 9.3 6.6 9.3 4.7 0 8.8-2.8 9.8-9.3l2.7-17.5h4.8l-4.6 29.8h-4.9zM328 41.4l.6-3.6c-2.7 2.3-6.3 4.3-10.8 4.3-6.8 0-11.4-4.5-9.8-15 1.6-10.6 8.2-16 15.3-16 4.3 0 6.9 1.6 8.9 4L334 2.4l5.2-2.4-6.4 41.5-4.8-.1c0 .1 0 0 0 0zm3.4-22.3c-1.5-2.5-4.5-4.5-8.5-4.5-5.6 0-9 4.3-10.3 12.3-1.2 7.5 1.5 11.4 6.8 11.4 3.6 0 6.8-1.7 9.6-4.3l2.4-14.9zM244.8 177.7l.6-3.6c-2.7 2.3-6.4 4.3-11.3 4.3-5.3 0-10.5-2.3-9.4-9.6 1.1-6.7 7.7-9.6 14.5-9.6 3.4 0 6.4.7 8.2 1.7l.5-3.5c.7-4.4-1.4-6.6-6.4-6.6-3.5 0-6.6.8-9.6 2.3l-1.3-3.5c3.2-1.4 7.4-2.4 11.7-2.4 7.3 0 11.5 2.7 10.4 9.7l-3.2 20.8h-4.7zm2-13.4c-2.1-1.1-4.3-1.7-8.5-1.7-4.9 0-8.3 2.1-8.8 5.8-.7 4.4 1.8 6.4 5.9 6.4 4.4 0 8-2 10.4-4.5l1-6zM260.3 177.7l6-39 5.2-2.4-6.4 41.5-4.8-.1zM276.4 177.7l6-39 5.2-2.4-6.4 41.5-4.8-.1zM292.5 177.7l4.6-29.8h4.8l-4.6 29.8h-4.8zm7.9-35.2c-2 0-3.4-1.4-3.1-3 .3-1.7 2.1-3.1 4.1-3.1 1.8 0 3.2 1.4 2.9 3.1-.4 1.6-2.1 3-3.9 3zM327.6 177.7l.6-3.6c-2.7 2.3-6.4 4.3-11.3 4.3-5.3 0-10.5-2.3-9.4-9.6 1.1-6.7 7.7-9.6 14.5-9.6 3.4 0 6.4.7 8.2 1.7l.5-3.5c.7-4.4-1.4-6.6-6.4-6.6-3.5 0-6.6.8-9.6 2.3l-1.3-3.5c3.2-1.4 7.4-2.4 11.7-2.4 7.3 0 11.5 2.7 10.4 9.7l-3.2 20.8h-4.7zm2.1-13.4c-2.1-1.1-4.3-1.7-8.5-1.7-4.9 0-8.3 2.1-8.8 5.8-.7 4.4 1.8 6.4 5.9 6.4 4.4 0 8-2 10.4-4.5l1-6zM364.1 177.7l2.7-17.5c1-6.4-1.2-9.3-6.6-9.3-4.7 0-8.8 2.8-9.8 9.3l-2.7 17.5h-4.8l4.6-29.8h4.8l-.6 3.6c2.3-2.5 5.7-4.3 10-4.3 7.2 0 11.3 3.7 10 12.3l-2.8 18.2h-4.8zM403.6 153.9c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.6-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.3zM437.8 164.2h-22.6c-.5 6.4 2.3 10.4 7.8 10.4 3.9 0 6.4-1 9.8-2.8l1.8 3.1c-4.4 2.3-7.6 3.5-12.7 3.5-6.2 0-13.2-4-11.3-15.7 1.5-9.5 8.3-15.4 16.4-15.4 8.8 0 12.7 6.2 11.4 14.7-.2.9-.4 1.5-.6 2.2zm-11.4-13.3c-5 0-9 3.2-10.6 9.8H434c.5-5.8-1.7-9.8-7.6-9.8zM282.4 106.5c-4.6 0-8.5-1.5-11.4-3.8l3.3-3.1c2.4 2.1 5.4 3.3 8.7 3.3 4.6 0 7.1-1.7 7.6-4.6.4-2.4-1.4-3.8-7-6.1-6.4-2.6-8.9-4.4-8.2-9.2.7-4.5 5.6-7.6 11.8-7.6 4.6 0 8 1.3 10.4 3.2l-3.2 3.1c-2.4-1.8-4.4-2.7-8-2.7-3.6 0-5.8 1.5-6.2 3.7-.4 2.5 1.2 3.5 6.6 5.8 6 2.6 9.5 4.2 8.7 9.6-1.1 5.8-7.3 8.4-13.1 8.4zM330.2 92.4h-22.6c-.5 6.4 2.3 10.4 7.8 10.4 3.9 0 6.4-1 9.8-2.8l1.8 3.1c-4.4 2.3-7.6 3.5-12.7 3.5-6.2 0-13.2-4-11.3-15.7 1.5-9.5 8.3-15.4 16.4-15.4 8.8 0 12.7 6.2 11.4 14.7-.2.9-.4 1.5-.6 2.2zm-11.5-13.3c-5 0-9 3.2-10.6 9.8h18.3c.5-5.8-1.7-9.8-7.7-9.8zM361.4 82.1c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.7-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.2zM388.8 105.8l.6-3.6c-2.3 2.5-5.7 4.3-10 4.3-7.2 0-11.3-3.7-10-12.3l2.8-18.2h4.8l-2.7 17.5c-1 6.4 1.2 9.3 6.6 9.3 4.7 0 8.8-2.8 9.8-9.3l2.7-17.5h4.8l-4.6 29.8h-4.8zM425.4 80.4c-1.3-.7-2.7-1.2-4.9-1.2-4.7 0-7.9 3.4-8.7 9l-2.7 17.5h-4.8l4.6-29.8h4.8l-.6 3.7c1.9-2.4 5.4-4.3 9-4.3 2.5 0 4.1.3 5.2.7l-1.9 4.4zM430.7 105.8l4.6-29.8h4.8l-4.6 29.8h-4.8zm7.9-35.2c-2 0-3.4-1.4-3.1-3 .3-1.7 2.1-3.1 4.1-3.1 1.8 0 3.2 1.4 2.9 3.1-.3 1.7-2 3-3.9 3zM456.7 79.6l-3 19.5c-.4 2.7.3 3.6 2.9 3.6 1.9 0 3.3-.3 4.9-.8l-.9 3.7c-2 .7-3.8 1-6.4 1-4.2 0-6.2-1.8-5.4-6.8l3.1-20.1h-4.2l.6-3.6h4.2l1.4-9.2 5.2-2.4-1.9 11.5h8.4l-.6 3.6h-8.3zM476.9 116.4h-4.8l6.3-10.8-7.5-29.6h5.1l4.9 21.7.7 3.1 1.6-3L494.9 76h5.1l-23.1 40.4zM450.3 148.1c0-3.1 1.1-5.6 3.3-7.8 2.2-2.2 4.8-3.3 7.8-3.3s5.7 1.1 7.8 3.3c2.2 2.2 3.3 4.8 3.3 7.8s-1.1 5.7-3.3 7.8c-2.2 2.2-4.8 3.3-7.8 3.3s-5.7-1.1-7.8-3.3c-2.2-2.1-3.3-4.8-3.3-7.8zm20.3 0c0-2.6-.9-4.7-2.7-6.5-1.8-1.8-4-2.7-6.5-2.7s-4.7.9-6.6 2.7c-1.8 1.8-2.7 4-2.7 6.5s.9 4.7 2.7 6.6c1.8 1.8 4 2.7 6.6 2.7s4.7-.9 6.5-2.7c1.9-1.8 2.7-4 2.7-6.6zm-5.7 6.7-3.5-5.8h-1.9v5.8h-1.9v-13.6h3.5c3.3 0 4.9 1.3 4.9 3.8 0 1.7-.9 3-2.6 3.7l3.7 6.2-2.2-.1zm-5.5-12v4.5c.2 0 .6.1 1.3.1 1.3 0 2.1-.2 2.6-.5.4-.3.6-.9.6-1.8 0-1.5-1-2.3-2.9-2.3h-1.6z" class="st1_inject_1"/>
+  </g>
+</svg></image></logo></organization></contributor><language>en</language><script>Latn</script><status><stage>published</stage></status><copyright><from>2019</from><owner><organization>
+<name>Cloud Security Alliance</name>
+<abbreviation>CSA</abbreviation><logo><image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/csa/logo.svg" mimetype="image/svg+xml"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0" style="enable-background:new 0 0 500 178.3" version="1.1" viewBox="0 0 500 178.3">
+  <style>.st0_inject_2 {fill:#00549f}.st1_inject_2 {fill:#f98526}</style>
+  <g id="Art_inject_2">
+    <path d="M26.8 94c-.3 1.2-.5 2.4-.6 3.6-1.9 12.8.9 23 11.4 23 7.7 0 11.5-3.9 17.5-11.9l19 10.4c-7.5 11-18.9 21.7-39.8 21.7C8.2 140.8-3 122.4.7 97.5l.6-3.6c0 .1 25.5.1 25.5.1zM4.1 84.5c7.3-19.1 23.7-30.3 43.2-30.3 21.6 0 28.8 8.9 32.6 24.7l-23.3 8.3c-2-7.8-4.3-12.7-12.3-12.7-6.4 0-11.1 3.8-14.2 10h-26zM144.7 94c6.7 4.4 9.3 10.5 7.9 19.8-2.8 19.2-19.2 27.1-40.3 27.1-14.2 0-27.2-4.4-35.6-10.2l14.5-18.3c5.8 4.2 16.4 8.4 24.5 8.4 8.7 0 11.6-1.4 12.2-5.4.5-3.1-2.4-5-13.8-7.7-13.8-3.2-22.6-6.6-26-13.7h56.6zm-58.4-9.5c.1-1.2.2-2.5.4-3.8 2.3-15.8 17.4-26.5 38.6-26.5 14.9 0 25.2 3.5 33.6 9.7l-14.5 18.2c-7-5-14.4-7.9-23.3-7.9-7.3 0-9.4 2.2-9.8 5.2-.3 2.3 1.1 3.6 6 5.2h-31v-.1zM215.8 84.6l-5.2-29.1h-21.2l-13.8 29.1zM186.1 106.3h12.6l-1.4-12.4h20.2l8.2 45.6H203l-1.9-14.7h-22.7l-6.3 14.7h-22.5L171.2 94h20.1z" class="st0_inject_2"/>
+    <path d="M214.8 17.7c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.7-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.2zM222.7 41.4l6-39 5.2-2.4-6.4 41.5-4.8-.1zM249.8 42c-8.3 0-13.7-5.4-12.2-15.5 1.6-10.1 9-15.6 17.3-15.6s13.8 5.2 12.2 15.4c-1.6 10.1-9 15.7-17.3 15.7zm4.4-27.4c-5.9 0-10.4 3.9-11.6 11.8s2.1 11.9 7.9 11.9c5.8 0 10.5-4.1 11.7-11.9 1.3-7.8-2.1-11.8-8-11.8zM293.3 41.4l.6-3.6c-2.3 2.5-5.7 4.3-10 4.3-7.2 0-11.3-3.7-10-12.3l2.8-18.2h4.8L278.9 29c-1 6.4 1.2 9.3 6.6 9.3 4.7 0 8.8-2.8 9.8-9.3l2.7-17.5h4.8l-4.6 29.8h-4.9zM328 41.4l.6-3.6c-2.7 2.3-6.3 4.3-10.8 4.3-6.8 0-11.4-4.5-9.8-15 1.6-10.6 8.2-16 15.3-16 4.3 0 6.9 1.6 8.9 4L334 2.4l5.2-2.4-6.4 41.5-4.8-.1c0 .1 0 0 0 0zm3.4-22.3c-1.5-2.5-4.5-4.5-8.5-4.5-5.6 0-9 4.3-10.3 12.3-1.2 7.5 1.5 11.4 6.8 11.4 3.6 0 6.8-1.7 9.6-4.3l2.4-14.9zM244.8 177.7l.6-3.6c-2.7 2.3-6.4 4.3-11.3 4.3-5.3 0-10.5-2.3-9.4-9.6 1.1-6.7 7.7-9.6 14.5-9.6 3.4 0 6.4.7 8.2 1.7l.5-3.5c.7-4.4-1.4-6.6-6.4-6.6-3.5 0-6.6.8-9.6 2.3l-1.3-3.5c3.2-1.4 7.4-2.4 11.7-2.4 7.3 0 11.5 2.7 10.4 9.7l-3.2 20.8h-4.7zm2-13.4c-2.1-1.1-4.3-1.7-8.5-1.7-4.9 0-8.3 2.1-8.8 5.8-.7 4.4 1.8 6.4 5.9 6.4 4.4 0 8-2 10.4-4.5l1-6zM260.3 177.7l6-39 5.2-2.4-6.4 41.5-4.8-.1zM276.4 177.7l6-39 5.2-2.4-6.4 41.5-4.8-.1zM292.5 177.7l4.6-29.8h4.8l-4.6 29.8h-4.8zm7.9-35.2c-2 0-3.4-1.4-3.1-3 .3-1.7 2.1-3.1 4.1-3.1 1.8 0 3.2 1.4 2.9 3.1-.4 1.6-2.1 3-3.9 3zM327.6 177.7l.6-3.6c-2.7 2.3-6.4 4.3-11.3 4.3-5.3 0-10.5-2.3-9.4-9.6 1.1-6.7 7.7-9.6 14.5-9.6 3.4 0 6.4.7 8.2 1.7l.5-3.5c.7-4.4-1.4-6.6-6.4-6.6-3.5 0-6.6.8-9.6 2.3l-1.3-3.5c3.2-1.4 7.4-2.4 11.7-2.4 7.3 0 11.5 2.7 10.4 9.7l-3.2 20.8h-4.7zm2.1-13.4c-2.1-1.1-4.3-1.7-8.5-1.7-4.9 0-8.3 2.1-8.8 5.8-.7 4.4 1.8 6.4 5.9 6.4 4.4 0 8-2 10.4-4.5l1-6zM364.1 177.7l2.7-17.5c1-6.4-1.2-9.3-6.6-9.3-4.7 0-8.8 2.8-9.8 9.3l-2.7 17.5h-4.8l4.6-29.8h4.8l-.6 3.6c2.3-2.5 5.7-4.3 10-4.3 7.2 0 11.3 3.7 10 12.3l-2.8 18.2h-4.8zM403.6 153.9c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.6-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.3zM437.8 164.2h-22.6c-.5 6.4 2.3 10.4 7.8 10.4 3.9 0 6.4-1 9.8-2.8l1.8 3.1c-4.4 2.3-7.6 3.5-12.7 3.5-6.2 0-13.2-4-11.3-15.7 1.5-9.5 8.3-15.4 16.4-15.4 8.8 0 12.7 6.2 11.4 14.7-.2.9-.4 1.5-.6 2.2zm-11.4-13.3c-5 0-9 3.2-10.6 9.8H434c.5-5.8-1.7-9.8-7.6-9.8zM282.4 106.5c-4.6 0-8.5-1.5-11.4-3.8l3.3-3.1c2.4 2.1 5.4 3.3 8.7 3.3 4.6 0 7.1-1.7 7.6-4.6.4-2.4-1.4-3.8-7-6.1-6.4-2.6-8.9-4.4-8.2-9.2.7-4.5 5.6-7.6 11.8-7.6 4.6 0 8 1.3 10.4 3.2l-3.2 3.1c-2.4-1.8-4.4-2.7-8-2.7-3.6 0-5.8 1.5-6.2 3.7-.4 2.5 1.2 3.5 6.6 5.8 6 2.6 9.5 4.2 8.7 9.6-1.1 5.8-7.3 8.4-13.1 8.4zM330.2 92.4h-22.6c-.5 6.4 2.3 10.4 7.8 10.4 3.9 0 6.4-1 9.8-2.8l1.8 3.1c-4.4 2.3-7.6 3.5-12.7 3.5-6.2 0-13.2-4-11.3-15.7 1.5-9.5 8.3-15.4 16.4-15.4 8.8 0 12.7 6.2 11.4 14.7-.2.9-.4 1.5-.6 2.2zm-11.5-13.3c-5 0-9 3.2-10.6 9.8h18.3c.5-5.8-1.7-9.8-7.7-9.8zM361.4 82.1c-2.2-1.9-4.3-3-7.7-3-5.3 0-10 4.2-11.2 11.7-1.2 7.3 1.7 12 7.7 12 3.3 0 5.7-1.2 8.3-3.2l2.5 2.7c-3.2 2.6-6.8 4.2-11.6 4.2-7.4 0-13.5-5-11.9-15.4 1.7-11 9.9-15.7 17-15.7 4.6 0 7.8 1.5 10.2 3.5l-3.3 3.2zM388.8 105.8l.6-3.6c-2.3 2.5-5.7 4.3-10 4.3-7.2 0-11.3-3.7-10-12.3l2.8-18.2h4.8l-2.7 17.5c-1 6.4 1.2 9.3 6.6 9.3 4.7 0 8.8-2.8 9.8-9.3l2.7-17.5h4.8l-4.6 29.8h-4.8zM425.4 80.4c-1.3-.7-2.7-1.2-4.9-1.2-4.7 0-7.9 3.4-8.7 9l-2.7 17.5h-4.8l4.6-29.8h4.8l-.6 3.7c1.9-2.4 5.4-4.3 9-4.3 2.5 0 4.1.3 5.2.7l-1.9 4.4zM430.7 105.8l4.6-29.8h4.8l-4.6 29.8h-4.8zm7.9-35.2c-2 0-3.4-1.4-3.1-3 .3-1.7 2.1-3.1 4.1-3.1 1.8 0 3.2 1.4 2.9 3.1-.3 1.7-2 3-3.9 3zM456.7 79.6l-3 19.5c-.4 2.7.3 3.6 2.9 3.6 1.9 0 3.3-.3 4.9-.8l-.9 3.7c-2 .7-3.8 1-6.4 1-4.2 0-6.2-1.8-5.4-6.8l3.1-20.1h-4.2l.6-3.6h4.2l1.4-9.2 5.2-2.4-1.9 11.5h8.4l-.6 3.6h-8.3zM476.9 116.4h-4.8l6.3-10.8-7.5-29.6h5.1l4.9 21.7.7 3.1 1.6-3L494.9 76h5.1l-23.1 40.4zM450.3 148.1c0-3.1 1.1-5.6 3.3-7.8 2.2-2.2 4.8-3.3 7.8-3.3s5.7 1.1 7.8 3.3c2.2 2.2 3.3 4.8 3.3 7.8s-1.1 5.7-3.3 7.8c-2.2 2.2-4.8 3.3-7.8 3.3s-5.7-1.1-7.8-3.3c-2.2-2.1-3.3-4.8-3.3-7.8zm20.3 0c0-2.6-.9-4.7-2.7-6.5-1.8-1.8-4-2.7-6.5-2.7s-4.7.9-6.6 2.7c-1.8 1.8-2.7 4-2.7 6.5s.9 4.7 2.7 6.6c1.8 1.8 4 2.7 6.6 2.7s4.7-.9 6.5-2.7c1.9-1.8 2.7-4 2.7-6.6zm-5.7 6.7-3.5-5.8h-1.9v5.8h-1.9v-13.6h3.5c3.3 0 4.9 1.3 4.9 3.8 0 1.7-.9 3-2.6 3.7l3.7 6.2-2.2-.1zm-5.5-12v4.5c.2 0 .6.1 1.3.1 1.3 0 2.1-.2 2.6-.5.4-.3.6-.9.6-1.8 0-1.5-1-2.3-2.9-2.3h-1.6z" class="st1_inject_2"/>
+  </g>
+</svg></image></logo></organization></owner></copyright><ext><doctype>standard</doctype><flavor>csa</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<presentation-metadata><ul-label-list>•</ul-label-list><ul-label-list>-</ul-label-list><ul-label-list>o</ul-label-list><annex-delim><br/></annex-delim><ol-label-template-alphabet-upper>%<span class="fmt-label-delim">)</span></ol-label-template-alphabet-upper><doctype-alias>standard</doctype-alias><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_ff7611b8-2516-62f0-e2ae-d52a8b30f06a" obligation="normative"><p id="_9323b6c4-70de-9869-7132-f89214c59777">© 2019 Cloud Security Alliance, LLC.</p>
+</clause>
+</copyright-statement>
+
+<legal-statement>
+
+<clause id="_7e0f3c63-3fc9-65cf-37f7-b94afa0dbc5d" obligation="normative"><p id="_50bbfa02-61c3-8332-bad8-61e7389d1808">All rights reserved. Unless otherwise specified, no part of this publication may be reproduced or utilized otherwise in any form or by any means, electronic or mechanical, including photocopying, or posting on the internet or an intranet, without prior written permission. Permission can be requested from the address below.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+<clause id="_9e082c4c-e3a9-0179-a2be-a1a192ed4e60" obligation="normative"><p id="_bf2237bd-3623-4c84-d54e-82e2ad89e07a">Cloud Security Alliance</p>
+
+<p id="_dcf0ea1b-5ce4-683b-4315-f5359b753ca1" align="left">2212 Queen Anne Ave N<br/> Seattle<br/> WA 98109<br/> United States of America<br/> <br/> <link target="mailto:copyright@cloudsecurityalliance.com"/><br/> <link target="https://www.cloudsecurityalliance.com">www.cloudsecurityalliance.com</link></p>
+</clause>
+</feedback-statement>
+</boilerplate><preface><introduction id="_32b7ddae-72b0-22e1-cd9a-a67be2a091f7" obligation="informative">
+<title id="_2b2e98d1-114a-3da4-8556-01ae0a724280">Introduction</title>
+<clause id="_08eb0db5-b2e6-d1d8-7437-e652cdc8f793" obligation="informative">
+<title id="_0ece3002-444c-0e77-b260-b716fbeee850">Background</title>
+<p id="_c79ec059-e2cc-371f-6c9a-c8d332105c32">In today’s hyper-competitive context with increasing cybersecurity threats, especially in the cloud, organizations are under strong pressure to streamline information security management processes. The age-old problem of resource limitations is exacerbated — the tradition of information security management systems (ISMS) is seemingly too rigid in structure, yet inadequate in responsiveness to new needs.</p>
+
+<p id="_c1cf45e6-04f5-636a-79a0-cdae8f8213c8">Organizations today are faced with a number of information security management issues, including:</p>
+
+<ul id="_7140ed07-c132-90c7-f3db-a6f31a155e06"><li><p id="_72aa1113-4d56-fab8-2a68-f7fdcdb3744f">Spiralling compliance governance costs;</p>
+</li>
+<li><p id="_7ce8ed7b-e3fc-a20d-bdf4-a977de13850b">Global shortage of information security professionals, forcing more efficient utilization of staff;</p>
+</li>
+<li><p id="_dabd5f7b-545c-aa97-56ca-8100ea242f76">The notable disconnect between strategic security and operational security.</p>
+</li>
+</ul>
+
+<p id="_feb0063c-6e1a-96c9-b36d-304eb9f83be1">All of these factors pressure an organization’s information security processes to deliver more for less.</p>
+</clause>
+
+<clause id="_190e3e81-103c-81b7-7354-619e54646753" obligation="informative">
+<title id="_d3bfc1ce-d628-c241-f392-19d97c4efa06">Learning from the Collaborative Philosophy</title>
+<p id="_f30a80b2-4357-5667-d3e5-1739e960a348">DevOps, the practice of applying developmental best practices such as collective collaboration to infrastructure operations, has been shown to positively impact efficiencies of development and operations teams today, especially in the cloud environment.</p>
+
+<p id="_78f1de36-d968-2077-ab2b-66a6ef4872cb">Given its strengthening adoption, it is necessary to consider its impact on information security itself and look to apply those practices to the arena of information security management.</p>
+
+<p id="_ecf41f8c-33df-36a0-6e28-051cc0df9955">Distilling from the cultural and philosophical elements of such collaborative practices, as well as from the exemplary contexts where those practices were derived from, six major principles are described in this document to demonstrate the principles of achieving</p>
+</clause>
+
+<clause id="_73fc660f-4be7-cf61-ad23-7ff59c5c9466" obligation="informative">
+<title id="_b8855ccf-7304-bde6-818a-4e9cc8e911e2">Application to security</title>
+<p id="_f0239c96-9898-ef6b-f184-48438004066a">DevOps is now broadly practiced but it has been generally separated from security practices. There is currently no standardized term in industry that cater to this aspect. A number of terms have been proposed by members of the community, including “DevOpsSec”, “DevSecOps”, “SecDevOps”, to explain the intersection of security and DevOps, as well as the amalgamation of security, development and operations practices.</p>
+
+<p id="_e0ce17a3-e065-6044-8ddd-bb29999c8df7">These terms have been used interchangeably, but the meanings they convey can be vastly different. The definitions of these terms can also widely conflict with each other depending on the particular understanding of the reader. Moreover, there is no industry recognized definition for security automation, which is a core concept to the application of DevOps practices to security operations, leading to confusion and misinterpretations. It is therefore crucial to clarify and standardize such terms for a global and wider industry audience.</p>
+</clause>
+
+<clause id="_7b53d08f-368b-c52b-dc75-b03846b9cf3d" obligation="informative">
+<title id="_e954d1c9-d3f3-bddc-449b-b4a705390f7b">Target Audience</title>
+<p id="_862a347b-4295-6ceb-e80a-dcb8341a1cf7">The target audience of this document includes those involved in the management and operational functions of risk, information security and information technology. This includes the C-suite (CISO, CIO, CTO, CRO, COO, CEO), and especially to the individuals involved in the following functional areas: automation, DevOps, quality assurance, InfoSec, governance, risk management and compliance.</p>
+</clause>
+</introduction></preface><sections>
+<clause id="_91eadcc7-d8e9-8c8b-cdb3-493d3b4ede3b" type="scope" obligation="normative">
+<title id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title>
+<p id="_2fe3016a-7865-412e-da7e-057c69821a65">This document defines “Reflexive Security” as a new security management approach that is built upon the interrelationships between security, development and operations necessary for protecting the security stance and the deliverables of an organization.</p>
+
+<p id="_03571448-d092-21c2-43d6-4d315c5e0acc">The benefits of combining security, development and operation practices for integrated management are also described.</p>
+
+<p id="_3415123e-cc23-c31b-9ea0-91bf6cd5e59c">Several approaches to Reflexive Security are suggested to resolve the availability gap of cyber security professionals.</p>
+</clause>
+
+
+
+<terms id="_e2ed08e0-a5fc-7e2e-bfd2-ff1f854639c9" obligation="normative">
+<title id="_dfb2eab2-f980-6365-3c47-81d0eb272962">Terms and definitions</title><p id="_dcc01114-4d03-3550-1347-4ba901bda94c">For the purposes of this document, the following terms and definitions apply.</p>
+<p id="_9459eb76-97c4-24c0-965b-00f828358e76">For the purposes of this document, the terms and definitions given in ISO 27000 and the following apply.</p>
+
+<term id="_52f90411-3577-af3d-13f1-773b3b2417e8" anchor="term-DevOps"><preferred><expression>
+<name>DevOps</name>
+</expression>
+</preferred>
+<definition id="_942e9785-b89e-684e-c1bb-0d1e53ced570"><verbal-definition id="_71e7b46b-0e95-d0b4-3e03-549073814c74"><p id="_cd9ff347-53a5-e6a1-c02f-05e6dad0300a">Application of software development methodologies to infrastructure operations.</p></verbal-definition></definition>
+ </term>
+
+<term id="_6495bd17-d218-cb50-d73c-147e94ccc210" anchor="term-DevOpsSec"><preferred><expression>
+<name>DevOpsSec</name>
+</expression>
+</preferred>
+<definition id="_ee0ae59c-0d93-28dd-8bd2-d46c5a07932d"><verbal-definition id="_2611b53e-7151-a638-42f0-dba24878cd04"><p id="_21cbd43d-2709-ff61-93ea-03b52fdece52">Application of information security principles and practices to protect processes that utilize DevOps culture, practices, and workflows</p></verbal-definition></definition>
+ </term>
+
+<term id="_85ebe6f2-d57d-dc9d-2035-abdcaff55ceb" anchor="term-DevSecOps-_DSO_"><preferred><expression>
+<name>DevSecOps (DSO)</name>
+</expression>
+</preferred>
+<definition id="_b2b83e28-ee1d-d2f2-46fa-84f73e9aa091"><verbal-definition id="_1049fc8f-f2f6-346c-dd97-57356163e646"><p id="_0c6c075e-b8b6-2331-abac-bf4cfb982075">The integration of continuous security principles, processes, and technologies into DevOps culture, practices, and workflows</p></verbal-definition></definition>
+ </term>
+
+<term id="_248cb34f-60b8-7b68-d331-3e173d31db4d" anchor="term-SecDevOps"><preferred><expression>
+<name>SecDevOps</name>
+</expression>
+</preferred>
+<definition id="_8aca7216-090f-8a82-66e4-c3a59b030a32"><verbal-definition id="_b64c5a71-01d1-c9f3-2ca4-bea1a19d2849"><p id="_d6579ca1-8def-6e4f-7ce7-203fbf3c7fa9">Application of DevOps culture, practices, and workflows for the achievement of information security and compliance management</p></verbal-definition></definition>
+ </term>
+</terms>
+
+<clause id="_6b535d95-be4c-0621-6fba-5efc1071db10" obligation="normative">
+<title id="_b37404dd-1b21-40e3-6013-e105c742fae4">Reflexive Security</title>
+<clause id="_8b8fa61b-54be-ad35-ae97-8f140dafec0e" obligation="normative">
+<title id="_53d82e48-1024-e16a-9901-40ceda1ab9b0">General</title>
+<p id="_5b2e7ae1-5e37-6482-2e9a-6578666454f6">Reflexive Security is an approach for information security management built upon the principles of Agile and DevOps. It is a non-prescriptive framework that is purely needs-based, emphasizes collective responsibility, and considers information security and its responses to be a holistic function of the organization.</p>
+
+<p id="_e72461c6-5e46-bab7-eab2-fc4cca269b24">The word “Reflexive” is used for its meaning from the reflexive relation in mathematical sets, where every element in a such a relation is related to itself. In Reflexive Security, every action taken is related to the context and needs of the organization itself.</p>
+
+<p id="_19b69493-7936-38a1-8e36-83b53978ae50">Reflexive Security emphasizes security across organizational roles that reacts to external and internal threats in an agile and dynamic way. It aims to be a new information security management strategy that is dynamic, interactive, effective and holistic.</p>
+</clause>
+
+<clause id="_5bc2e396-4608-d613-21fb-5a382bc41753" obligation="normative">
+<title id="_c0eaebd4-24e6-8c93-fa23-e51328f848d1">Relationship with ISMS</title>
+<p id="_50196db2-b69f-637c-54f1-68d95389fa6f">Comparing to the traditional Information Security Management System (ISMS) approach, Reflexive Security aims to follow a similar spirit as Agile software development when compared to the Waterfall mindset.</p>
+
+<p id="_c90548fa-0e34-7844-951a-c262033563b0">Reflexive Security treasures dynamic information exchange within the organization. Like the immune system of the human body, information is immediately propagated to adjacent, potentially vulnerable functions given detection of a threat. A traditional ISMS approach is top-down: it requires threat information to be reported back to the higher functions, before any response can be made. In Reflexive Security, organization functions themselves are already integrated with security functions, and can provide an immediate response to address potential impact. A centralized response is important, but should not prohibit an immediate tactical approach.</p>
+
+<p id="_0105ae4f-0dda-4bb9-e619-c716b2857baa">The ISMS approach is about adopting best practices. However, often best practices that work in larger organizations do not work with smaller ones. In fact, they can create an unnecessary burden for smaller organizations, taking away precious time and effort and hence negatively affecting their information security stances.</p>
+
+<p id="_e5a75acf-6844-e0c3-3316-8bc90f59a81e">Reflexive Security also alleviates the security skills shortage paradox by promoting the idea of “hybrid domain-security experts”, by delegating risks and security responsibilities to organization functions.</p>
+
+<p id="_9b454b0d-f1f0-304d-707e-eceeef8df495">Top leadership commitment as required in an ISMS, while crucial, is insufficient. Top leadership has to understand the nature of information security and needs to be committed to integrating information security into each and every aspect of the organization. Top leadership must be themselves integrated into the information security function — fully understanding the risks and threats the organization faces (its risk profile) with regards to information security, setting clear bounds and requirements for personnel to adhere to.</p>
+
+<p id="_2a0439b5-73c0-0a12-6064-727434190ba7">The human link is often the weakest link in information security. Phishing, social engineering are all techniques to trick an unsuspecting individual to voluntarily compromise the security of an organization. Without full and active participation of the involved individuals, beyond awareness, information security simply cannot be achieved.</p>
+</clause>
+</clause>
+
+<clause id="_50da0bd1-37fe-a859-8903-6a6c1879d961" obligation="normative">
+<title id="_447f1e99-0680-3304-a118-74ebfa1dc711">Six Pillars Supporting Reflexive Security</title>
+<clause id="_a9e7d37a-b457-9b18-c9f8-6a76feb35cd6" obligation="normative">
+<title id="_0175f76d-716b-304d-d5e0-55b2c2c71130">General</title>
+<p id="_8c978097-218f-26f6-0ecc-892858ffce66">The six pillars can be abbreviated into the acronym RAMPAC (Responsible collectively, Automate, Measure, Pragmatic, Align and bridge, Collaborate and integrate).</p>
+</clause>
+
+<clause id="_b9c9a8a9-85ea-2268-000d-7adf9eb100fe" obligation="normative">
+<title id="_a5b4730d-959f-91ff-80ba-75453e4668e8">Responsible collectively</title>
+<p id="_2d0b0f21-e952-7916-befa-bdb3461f5dac">Security leadership plays a shepherding role for information security within an organization. However, everyone is responsible for an organization’s security. Each individual has their own security responsibility, and they must be aware of their own contribution (and potential problems) towards the organization’s security stance. Edge users not only have to be security-aware, they are the first line of defence for the organization.</p>
+</clause>
+
+<clause id="_6c8d931b-a211-13d1-e7e0-bf2b786bdbba" obligation="normative">
+<title id="_bb114494-b7fe-8daf-052c-8398b2be3e95">Pragmatic</title>
+<p id="_65753427-0b20-7f1c-d40d-3293d0359cf5">Security should provide value, not a hindrance. For every security initiative or adopted security control, a cost-benefit should be prepared demonstrating the value of security. Without a pragmatic approach, it is easy for persons unaware of the benefits of security to dismiss security practices as mere overhead or unnecessary. A pragmatic approach provides crucial information in building business case evidence to convince stakeholders of the importance of security, giving them confidence that plans will be executed faithfully.</p>
+
+<p id="_9d3bf2e0-7e6b-e1a4-d92c-fd368085cbde">The traditional ISMS approach relies on a best practices approach which could easily lead to overhead. Rarely are organizations not resource-constrained, and it is necessary to balance tailoring requirements to the organization against the adoption of best practices. Requirements must be based on organizational risks and value for maximum effectiveness.</p>
+</clause>
+
+<clause id="_89986cac-a54e-4109-ccbd-8cb1c742495a" obligation="normative">
+<title id="_222a532a-0f4b-9095-ae88-5637e79168cc">Align and bridge</title>
+<p id="_dd2be94c-fd0a-13aa-2575-17cd7c173bc6">Organizational risks and requirements must be fully aligned in order to derive maximum effectiveness and value from security processes. Security requirements that misalign with organizational risks represent resources potentially wasted, or worse, attention that has been taken away from critical matters that could cause organizational harm. By carefully aligning requirements throughout the organizational context, such as contractual, regulatory, product, security and compliance requirements, it is possible to extract maximum value by condensing a set of core requirements for the organization, allowing the delegation of risk management at more tactical levels for more dynamic responses and efficient usage of resources.</p>
+</clause>
+
+<clause id="_512f05d6-fafc-3b96-1e2b-9b965f18d9b6" obligation="normative">
+<title id="_4c5310c8-fc37-850c-9247-5284dbd91e8d">Automate</title>
+<p id="_bc4b5017-5626-30f7-6cad-f91315de04bf">Automated security practices are the core of optimizing process efficiency. Processes that can be automated should be automated, and those that can’t should be transformed. Automation also creates its own set of problems but automated approaches to those problems are often possible. A mantra in software development says, if one does the same thing three times, it will be time to program it. This approach applies squarely to Reflexive Security.</p>
+</clause>
+
+<clause id="_ab671e27-9e89-664e-b3d5-d4622f9e7bbb" obligation="normative">
+<title id="_628e2237-25a6-8d5b-fc75-add5e6b10a5b">Measure and improve</title>
+<p id="_33db52f4-63c3-d343-dc2c-eb3595f324be">Performance that cannot be measured cannot be improved. Without measurements, there is no understandable evidence whether information security management is effective. Reflexive Security is about achieving results, and the results must be measurable for transparency and improvement.</p>
+</clause>
+
+<clause id="_6f9a65af-f941-fb2c-44b9-f64bce929035" obligation="normative">
+<title id="_78b9df6a-a161-7db6-0750-edc422881d3a">Collaborate and integrate</title>
+<p id="_b7c48b0b-7ada-2b11-d923-3c9989f78336">Security can only be achieved through collaboration, not confrontation. A security aware and collaborative culture is necessary for everyone to feel comfortable reporting potential anomalies. The human factor is often the weakest link — most security incidents are caused by inadvertent human error. Security must be integrated into every aspect of business. Dedicated security personnel rarely have in-depth business domain expertise. No one else knows the business domain and its risks as well as those responsible for it. A team of dedicated security experts are likely oblivious of domain-specific security issues. Domain knowledge and security knowledge must be fused and co-exist in every organizational process for effective security management.</p>
+</clause>
+</clause>
+
+<clause id="_4a685f81-cc97-1165-dbc1-4b8dd5178ac7" obligation="normative">
+<title id="_c00026bb-4b68-b2e0-a3fb-5629896fa4e7">Six Benefits of Reflexive Security</title>
+<clause id="_ff41667b-5fcb-2ce4-d4bb-5cecbf05318d" obligation="normative">
+<title id="_24abdf30-6d12-8734-45d3-cd1948186a03">General</title>
+<p id="_69963528-29f3-a475-4c22-70966c35e4b5">The six benefits can be explained with the acronym HEARTY (Human-centric, Elastic, Apt and holistic, Resilient, Tailored, Dynamic).</p>
+</clause>
+
+<clause id="_cb8b9fbb-9a6e-5465-6f35-626a1cca5ef5" obligation="normative">
+<title id="_c744049b-fab3-e045-7cb7-9d03993d54b1">Human-centric</title>
+<p id="_9dff390e-a8ca-8e2f-3221-99d650ff2c1b">Security is integrated and internalized as an aspect of everyone’s work, and requires mind-share within every employee. It is not an external responsibility enforced or required by a separate, dedicated, security function.</p>
+</clause>
+
+<clause id="_c7795ae7-e16c-2549-1905-bde2e6aeea33" obligation="normative">
+<title id="_6f788be5-50fa-b1a1-4704-54e6301dc889">Elastic</title>
+<p id="_c4869c7a-dae7-1179-386c-db7c602cefde">Growing maturity of a Reflexive Security approach could lead to achievement of formal ISMS requirements, while being flexible enough to only target critical areas for maximum value based on actual risks. Its principles allow scaling according to organizational risks and needs, preventing permanent overhead in resource consumption.</p>
+</clause>
+
+<clause id="_3d1eae51-e0aa-8f56-7710-5f11f998e5fc" obligation="normative">
+<title id="_bbad2b87-2644-b7df-aba4-260fb4c44376">Apt and holistic</title>
+<p id="_b84a85bc-7851-8232-08bc-008d74ac8131">Focused on business needs and responding to the actual risk context faced by the organization when compared to traditional information security management, from business goals to operational processes to humans, who often turn out to be the weakest link.</p>
+</clause>
+
+<clause id="_4e00d5fb-307d-fbcd-c300-60584302e85e" obligation="normative">
+<title id="_ab483797-73dc-c0ea-65be-3bf376d30a55">Resilient</title>
+<p id="_ed8b99cf-070b-2258-f9ed-68507668e9cf">Security no longer relies on a single security function, e.g. a single security department, but security practices are integrated with business processes and embedded throughout the organization. When compared to ISMS processes, an Reflexive Security approach often enables deeper security involvement amongst personnel, resulting in more resilient security activities.</p>
+</clause>
+
+<clause id="_849f3295-73d7-3ae9-b248-5cf443e8547c" obligation="normative">
+<title id="_e606e095-9e6a-32da-c84f-26f7eb2bec59">Tailored</title>
+<p id="_50bd94f3-a79d-6f08-803a-fe8ee0460dea">Prioritized approach to provision stronger protection to core or more vulnerable processes over those less exploitable. The traditional ISMS approach often applies the same set of controls across all processes, leading to inefficient resource allocation.</p>
+</clause>
+
+<clause id="_85f7bab2-bfbd-db92-fda2-615678f4429a" obligation="normative">
+<title id="_248acd54-6865-5519-6fd4-b3aff79fed15">Dynamic</title>
+<p id="_8b841043-9e94-bd3b-a36d-21e426e057a0">The protection of business goals is performed by integrating security with business processes, often down to the tactical level. This allows the organization to react faster and more effectively to threats and incidents.</p>
+</clause>
+</clause>
+
+<clause id="_b4e44874-5c64-7122-ef81-84e721e7da90" obligation="normative">
+<title id="_3830fd24-7b33-cfea-c809-e89049c70309">Achieving Reflexive Security</title>
+<clause id="_33b43876-c714-3f7d-ac74-c6c97e969b2f" obligation="normative">
+<title id="_1d0a0e6e-9129-6d18-fb0a-a14109f5544f">General</title>
+<p id="_5f7dac79-d8f4-b256-5435-ed97e7a75ee2">Reflexive Security can be considered as the amalgamation and integration of the DevSecOps, DevOpsSec and SecDevOps practices, placed within a holistic framework. These areas of practice all derive from the integration of security and DevOps principles, together with essential concepts from Agile.</p>
+
+<p id="_c2773133-428f-3733-d7bc-ada32fce6a17">Concepts made apparent by Agile software development practices (where “Agile” is the generic term including practices like Scrum), such as incremental development, collaborative authoring, test- or behavior-driven programming, and continuous integration, have given rise to infrastructure operation practices such as continuous delivery, software-defined infrastructure and infrastructure automation.</p>
+
+<p id="_cbceea94-ca1a-5fb4-489d-3021223b3039">These infrastructure-related practices are widely considered to be part of the “DevOps” repertoire,
+but with several conflicting definitions of what exactly the term represents, it is necessary to clarify
+and standardize its definition in order to evaluate and address its information security impact<fn id="_868170d5-3383-788c-619d-b1e160439166" reference="1"><p id="_1a4568c7-1246-bb1f-9583-6d229dcdd10c">For example, the Wikipedia article on DevOps defines it as “a set of practices that emphasizes the collaboration and communication of both software developers and information technology (IT) professionals while automating the process of software delivery and infrastructure changes”. This definition is too vague for evaluating the impact of DevOps on information security practices.</p>
+</fn>.</p>
+
+<p id="_c4faeb83-8bbf-3c84-41e5-7db3aa85e039">Its practices can entail different processes and outcomes depending on organizational context.
+Its processes could provide organizational-wide benefits through empowering integration and
+interaction between development and operations (e.g., the “build” and “run” processes), or in some
+cases, have minimal impact in complex enterprise teams where logistics and governance controls
+limits the application of DevOps<fn id="_cac667c9-bd1c-f58e-6093-669785e340ac" reference="2"><p id="_99e7e00b-43c7-068e-9f43-7123ea588d43"><link target="https://devops.com/enterprise-devops-doesnt-make-sense/"/></p>
+</fn>.</p>
+
+<p id="_4e802f27-f208-6de3-bc7a-dfbf01c71cce">The application of Agile and DevOps practices and related tools clearly have blended borders between software development and service infrastructure automation. Information security management and operations can benefit from an identical approach, with even tighter integration since it already depends on both software development and infrastructure automation.</p>
+
+<p id="_c3b3a0ce-d35e-5dbb-59ab-9f386a4cbfdb">The practices of DevSecOps, DevOpsSec and SecDevOps, as described below, provide necessary insights for the achievement of Reflexive Security. The three major aspects of how Agile and DevOps principles can help achieve Reflexive Security for information security management are shown below:</p>
+
+<ul id="_18ebc517-4e73-5cf7-0c73-8e087c15958b"><li><p id="_f813e290-f6ad-3861-a64d-a4dbaa536f3e">The impact of DevOps practices on information security</p>
+</li>
+<li><p id="_cacbcb33-83f6-4848-3846-14c2e0e9b0c5">The application of DevOps to security operations</p>
+</li>
+<li><p id="_af0acb91-5b5b-f3cf-88b3-69dade3eb4eb">The implementation of information security processes and compliance delivery through DevOps</p>
+</li>
+</ul>
+</clause>
+
+<clause id="_064cbfc0-dc1a-82e0-0e4d-438749582aa6" obligation="normative">
+<title id="_807d156e-6ff4-fb97-723a-e9047f65b0f5">Securing DevOps practices</title>
+<clause id="_6c87f3e9-e7cf-bad2-ec68-3083c790fc51" obligation="normative">
+<title id="_d8bb1e5c-b172-682a-bd8a-895da17c6bdb">GENERAL</title>
+<p id="_776014e9-a89a-b6f1-5f95-e97babb10371">While DevOps practices can help improve the management and operations of information security processes in an organization, the execution of these practices have to be secured. Specifically, organizations have to ensure that DevOps practices introduced do not compromise information security. This aspect has been called “DevOpsSec”, or “DevOps security”. DevOps practices strongly impact existing infrastructure and operations on it. Inherent security requirements in DevOps processes must be considered in the adoption of DevOps within an organization.</p>
+</clause>
+
+<clause id="_0af3d054-e43f-7a05-1ca7-e41250847252" obligation="normative">
+<title id="_518b764d-8bc1-71bb-ebbe-6e0c8868a5db">IMPLICATIONS</title>
+<p id="_c2235f0f-e38f-3c3c-fe4c-92d5468ef5fd">A software-defined infrastructure is highly beneficial for the experienced infrastructure engineer, where software-defined instances, containers, and network devices are programmatically created or destroyed through fingertips on the keyboard.However, it is equally true that a novice engineer could have his fingertips spin things out of control.</p>
+
+<p id="_22442315-c7bc-ea04-e09e-014e5e6f17ae">Security vulnerabilities can be inadvertently created due to lack of consideration of all aspects surrounding the infrastructure, for example, lax firewall rulesets, default credentials or an increased attack surface. While software development and infrastructure operation skills are closely related, mastery in one may not necessarily translate into proficiency of the other.</p>
+</clause>
+
+<clause id="_3438028e-88f4-6034-f913-b113d6d7c296" obligation="normative">
+<title id="_71615ce7-951b-205b-6673-da439d6cfd7b">EXAMPLE PRACTICES</title>
+<ul id="_f8cd15fb-666d-a037-4d15-8d7e49c976b3"><li><p id="_5f22e1f7-0955-57e4-4b98-7e4a6714450f">Infrastructure</p>
+<ul id="_ca6d8535-fc92-e3c6-ab01-f974f03064cc"><li><p id="_bcf4aa0c-0a18-919c-a4a2-de27d5aa7ebb">Security baseline checking on software-defined infrastructure</p>
+</li>
+<li><p id="_bcdb3e1e-00b9-31a4-a874-81b44abd0e86">Automated security checks on DevOps infrastructure</p>
+</li>
+</ul>
+</li>
+<li><p id="_9c947bd0-8c59-ba8a-7c69-7faee164173a">Containers</p>
+<ul id="_e2267b9a-77d5-829c-87bb-375247c7cc76"><li><p id="_d04cc400-29c7-8cf3-2a21-fb11d85a7d8f">Security baseline checking</p>
+</li>
+<li><p id="_ee3c7347-e25f-3879-10eb-1847b946622a">Automated hardening and management</p>
+</li>
+<li><p id="_dce76d29-19eb-5c53-700e-00984eb3153b">Vulnerability checks and file scans</p>
+</li>
+<li><p id="_91646889-dff3-db71-4b57-bc295c534447">Automated integrity and authenticity checking</p>
+</li>
+</ul>
+</li>
+<li><p id="_7b45f337-d957-8197-c288-ff428114f47a">Operating Systems / VM images</p>
+<ul id="_0c5e54db-c2df-cebe-8305-3ccf190ce464"><li><p id="_fd6f28da-778b-510b-19e3-4fb7463abd51">Automatic hardening during provisioning</p>
+</li>
+<li><p id="_79804b10-5dc7-e2f4-b91c-87e86ae034a8">Automated integrity and authenticity checking</p>
+</li>
+</ul>
+</li>
+<li><p id="_9b6a884f-a8dc-4961-65ac-8e836f5ead15">Secure Coding and Testing</p>
+<ul id="_809ef6db-5388-6d25-f04f-4feec99b50b6"><li><p id="_c3bc57d6-84f3-2cbe-dca6-0a466ebe37de">In-field compliance testing</p>
+</li>
+</ul>
+</li>
+<li><p id="_55de504f-cf41-4928-e9ff-ff568effc4f2">Release Management</p>
+<ul id="_2f1e1d49-f52e-5b65-b6cc-3cfd1048f745"><li><p id="_f2b7f62d-5bee-9cdc-661f-2cd5b0de565b">Automated vulnerability scans integrated with development and deployment workflow</p>
+</li>
+</ul>
+</li>
+<li><p id="_3f2669ca-7476-ae81-8912-7f53657cf83d">Business Continuity</p>
+<ul id="_45b3f89f-b55e-1763-7b61-54c6c6df6b95"><li><p id="_2cc2e20e-8ff9-f925-ceff-736433b014aa">Automated business continuity drills</p>
+</li>
+<li><p id="_feb9142c-6807-da97-859c-ac5b06859bb2">Automated tests for backup and restore processes</p>
+</li>
+</ul>
+</li>
+<li><p id="_9843d849-8b4b-7b6e-e74a-4612859a02b9">SSL Certificates and Public Key Infrastructure</p>
+<ul id="_7a4f7d05-6586-ecb2-9821-214492f53ee7"><li><p id="_b5fb0576-e684-fae8-900e-37af60e2dad7">Verification of certificate source and validity</p>
+</li>
+<li><p id="_d4406674-689c-1bb2-05db-6f72b30e1da5">Automated testing to ensure validity of issuer</p>
+</li>
+</ul>
+</li>
+<li><p id="_b724bbf7-4496-7dee-5553-25ad92cf31ce">Identity and Access Management</p>
+<ul id="_130ccd39-9997-8d66-a661-6c9f05139349"><li><p id="_96a5ada9-d153-72bf-e568-eaca62a4a035">Verification of account usage</p>
+</li>
+<li><p id="_a42fceb6-41de-9cfa-1520-36f22f943622">Continuous scans for inactive or suspicious accounts</p>
+</li>
+</ul>
+</li>
+<li><p id="_7aa849a2-7798-afc3-22f6-32fe43c1aa66">Encryption</p>
+<ul id="_9e2af2af-44fb-3159-29b9-7ee74b558be9"><li><p id="_3998d955-e762-d587-be0f-97ecd9f88fb0">Automated verification of data encryption processes</p>
+</li>
+</ul>
+</li>
+</ul>
+</clause>
+</clause>
+
+<clause id="_436058ca-f504-acfa-1d1e-fb99c58b5143" obligation="normative">
+<title id="_5317a042-65b7-b2ec-a3bd-849cac1e8d96">Implementing security operations through DevOps</title>
+<clause id="_b3cdc226-dce5-8b50-7347-bf331c407395" obligation="normative">
+<title id="_e6ef7f08-3634-3530-b549-cde935c80403">GENERAL</title>
+<p id="_28f58494-3912-523d-37e2-a1c267f4006b">DevOps provides powerful concepts that link development and infrastructure operations, and its practices can be integrated to facilitate the achievement of information security within an organization. The field of “DevSecOps”, or “DevOps for Security Operations”, applies DevOps concepts to enhance the efficiency and effectiveness of information security processes. Its aim is to facilitate the comparable paradigm shift of DevOps on infrastructure operations to security operations, through the integration with development and infrastructure operations.</p>
+</clause>
+
+<clause id="_80c9c751-40f7-d124-aaf4-d7e6082282eb" obligation="normative">
+<title id="_048220e0-7f3f-adc0-2450-05c48059eae3">IMPLICATIONS</title>
+<p id="_4a926012-1bb9-7a05-4561-fab1d0d93a9c">On a tactical level, DSO represents the integration and automation of security controls through DevOps using automated toolchains. The CSO sets the policies following organizational goals, requirements and risk management, which could be applied programmatically.</p>
+</clause>
+
+<clause id="_068303f8-beec-53ee-0768-5cdb8b493056" obligation="normative">
+<title id="_3565741a-0b9e-7314-dc05-89424199a5f7">EXAMPLE PRACTICES</title>
+<ul id="_7ee606b6-aa1e-b49c-5565-ee772fef24ea"><li><p id="_17515123-11c2-7a3d-1ece-9a68199fb0a7">Infrastructure</p>
+<ul id="_d46c6046-efd1-28e4-8652-1596388fe3ba"><li><p id="_39733873-a956-d666-15ab-585b37eced64">Immutable infrastructures</p>
+</li>
+</ul>
+</li>
+<li><p id="_70615586-dc2c-f22a-febf-c9802c2ceac3">QA</p>
+<ul id="_8e6cc3a9-6e0b-6468-d5fe-6c44f0632620"><li><p id="_50db3974-47fa-81b0-d060-8cdd48227dfc">Implementation of data masking of data used in development for testing</p>
+</li>
+</ul>
+</li>
+<li><p id="_b10267c2-a4c7-7065-efd4-a56587b62880">Containers</p>
+<ul id="_4620d9d3-2210-2667-807d-022d2904ecd2"><li><p id="_765bfff9-f5cb-91de-5419-1aae88c3cd33">Vulnerability scanning during building of container images</p>
+</li>
+<li><p id="_01ae5ea9-ff19-3bb2-90b0-60226cf7aab7">Patch management of applications and libraries inside containers</p>
+</li>
+<li><p id="_77c0d9e8-0db9-f90c-b2d1-bada77a89c49">Hardening / secure configuration, self-healing</p>
+</li>
+<li><p id="_a06ed9d3-ee59-aa2a-b9d8-a23774f86eb9">PKI / Digital signatures</p>
+</li>
+<li><p id="_2177295d-e291-1090-cb28-3b7e473ae715">Anti-virus scan during building of container images</p>
+</li>
+<li><p id="_c9b5b89d-3a85-71ba-153c-78d850a85dad">Certify container images</p>
+</li>
+<li><p id="_ccab1282-374c-dec4-2607-a926b2954036">Scan for embedded keys, hardcoded credentials, push for role based access technology, licensing compliance</p>
+</li>
+<li><p id="_629ee72c-dbfe-c4f4-186a-663d4752db34">Cryptographically sign and certify container images</p>
+</li>
+<li><p id="_e70e69a9-1611-7c4f-5c39-58db070f0a00">Runtime container security delivered by monitoring container activities</p>
+</li>
+</ul>
+</li>
+<li><p id="_693378ee-c928-52fc-5d5a-71a740f438b3">Operating Systems / VM images</p>
+<ul id="_0adbef97-e570-cdf3-46e3-59aafb0a9bd3"><li><p id="_0254b72e-3432-1735-deac-a6b2b5fb1be1">Vulnerability scanning during building of VM images</p>
+</li>
+<li><p id="_10535d86-7fb7-9a24-ec7a-5ae169815d69">Patch management of applications and libraries of the operating system</p>
+</li>
+<li><p id="_18f7be6b-6002-8b78-3ded-c1eec6a9c8da">Hardening / secure configuration, self-healing</p>
+</li>
+<li><p id="_5610fe1c-1843-d518-0eb3-a604032d7c1e">Anti-virus scan during building of VM images</p>
+</li>
+<li><p id="_6eb156f4-0044-2914-8e8d-470683993e94">Cryptographically sign and certify VM images</p>
+</li>
+</ul>
+</li>
+<li><p id="_81cccf8d-bcab-e0d2-3ddf-908bf17749ec">Secure Coding and Testing</p>
+<ul id="_db46cf25-2cbf-6bfe-fe1f-3c24738f6207"><li><p id="_a232dd70-a171-7e91-8e12-6009d7fd53b8">Inline analysis of code against top 10 OWASP vulnerabilities and provide real time feedback to developer</p>
+</li>
+<li><p id="_c17e45fd-250c-09f9-32e2-7c01ef581b9a">Static code analysis after code commits, builds or releases</p>
+</li>
+<li><p id="_834122d3-da55-8b30-bc42-50e46a60b845">Scanning for embedded keys, hardcoded credentials, push for role based access</p>
+</li>
+</ul>
+</li>
+<li><p id="_74a37e00-9b18-3125-0bdb-eaa86ec611a6">Release Management</p>
+<ul id="_b7cb17db-8f77-aed4-950d-2898c879de5d"><li><p id="_852813e8-2149-4125-49da-0332f81f74f8">Create new public/private keys for each release</p>
+</li>
+<li><p id="_a3237e6a-87e6-dcc8-175b-2d1c31e2cf00">Release approvals</p>
+</li>
+<li><p id="_2ce54431-a7e6-d687-c058-d2555f7a9e91">Security / compliance exception management based on the thresholds</p>
+</li>
+<li><p id="_a50a0132-83e9-1bf5-566c-291e2c803475">Only accept signed/certified container and OS images</p>
+</li>
+<li><p id="_f5c4d63c-c3e3-7c8d-6869-d88cc57c475d">Revocation of older SSL certificates / private keys / PKI after each release</p>
+</li>
+</ul>
+</li>
+<li><p id="_637574ac-2b8d-80d1-7a30-fc6ce44f47ca">Measures</p>
+<ul id="_e3c274c9-030c-e9f1-ad4d-17105bb83b0a"><li><p id="_517f452e-6f9a-8b27-1830-42aa100a7c17">Builds failed due to security issues</p>
+</li>
+<li><p id="_3ecf9ce9-ddcd-7aed-98cc-b2edf0b9c4e2">Releases with security exceptions</p>
+</li>
+<li><p id="_c8a9cc42-bda7-f5c9-2c87-977e9ffa3092">Deployment time and deployment frequency</p>
+</li>
+<li><p id="_c1bf71bc-0fa7-ba2d-7b24-47c41753374d">Releases bypassed security checks</p>
+</li>
+<li><p id="_ae0a120a-fffe-d8a2-0d8f-c6e075bec3e6">Code commits</p>
+</li>
+<li><p id="_38696106-8b1d-96ae-040c-747f34a3b010">Iteration length</p>
+</li>
+</ul>
+</li>
+</ul>
+</clause>
+</clause>
+
+<clause id="_2dde3270-def5-9840-739e-0eddb6f3c2eb" obligation="normative">
+<title id="_841a88c6-8c61-8f3d-f36a-0cb4fe4a8d25">Securing information security processes with DevOps</title>
+<clause id="_cf185b93-52f2-446e-382c-5d2e37584db3" obligation="normative">
+<title id="_3021a27b-1a24-2138-5c6c-ab1095fbca24">GENERAL</title>
+<p id="_c6ed89f4-b051-d43d-9365-1ce7c4c67e57">The practice of “SecDevOps”, or “Security DevOps”, aims to utilize DevOps practices to the implementation of information security processes. Similar to how DevOps concepts are able to improve the collaborative nature of development and infrastructure operations, SecDevOps integrates and facilitates collaboration of development with information security processes. A common result is the automation of information security processes (the “build”), accompanied by allowing development processes to be abreast of security implications and deliverable feedback.</p>
+</clause>
+
+<clause id="_771ed53a-b6d7-4586-fee7-a90e094bd30a" obligation="normative">
+<title id="_f5065c07-3acf-2fcb-15df-863378f1f9e9">IMPLICATIONS</title>
+<p id="_56142c3b-9116-0cc4-1914-2d60a3e7bdb4">“Security as Code” is not equivalent to security automation because it does not require the “programmatic” ability. For example, a scripted application of the DoD Security Technical Implementation Guides (STIG) may still have to be run manually during the installation of a server.</p>
+</clause>
+
+<clause id="_e57bd7b4-2855-7d2b-2066-520e897d861d" obligation="normative">
+<title id="_903aea92-4275-4cb5-275b-b2d1fb171518">EXAMPLE PRACTICES</title>
+<ul id="_7c81501e-5920-9d01-7738-e7e86228456b"><li><p id="_a7da933f-ffcf-1ae9-95f1-feb45cba7fc8">Business Continuity</p>
+<ul id="_f605295c-d5f2-160f-7c39-62db423e5b02"><li><p id="_4790f682-3b94-c085-f255-98941f92b686">Automatic business continuity plan testing through Infrastructure as Code (IaC)</p>
+</li>
+<li><p id="_93635e20-5170-dc30-82f7-9bcefeca6b99">Continuous backup and restore testing with data masking</p>
+</li>
+</ul>
+</li>
+<li><p id="_83685619-a7c3-eaf4-ce88-a7cc3ac82d42">SSL Certificates and Public Key Infrastructure</p>
+<ul id="_4aa2cdeb-37fe-f117-2fbb-a4af1947e16f"><li><p id="_fc9d0f40-c832-3384-d0fe-d4704996c386">Monitoring and auto renewal of SSL certificates</p>
+</li>
+<li><p id="_5497c2a7-782b-8b3b-597d-15095004a5e6">Testing of expiry dates of SSL certificates</p>
+</li>
+<li><p id="_635584d6-33e9-d0a2-b061-f98a1c0da9b0">Private and public key rotation</p>
+</li>
+</ul>
+</li>
+<li><p id="_744a990e-339b-7d23-fd8a-37f7853c036a">Identity and Access Management</p>
+<ul id="_d288eaae-6644-41f1-5b12-959c2f6500d1"><li><p id="_6c7c33e5-9376-70a3-a6fe-f1947f392fbc">Secrets management to effectively manage passwords, keys, API, tokens for application, services across IT landscape</p>
+</li>
+</ul>
+</li>
+<li><p id="_ea74125b-9696-c81d-04b3-31eb74c1441f">Infrastructure</p>
+<ul id="_76d61484-05f1-9b0a-6ffb-8c8c1bfbe71e"><li><p id="_3e5da22a-8ea9-3b84-8436-3f7455d7edda">Vulnerability scanning of servers, VMs, containers, appliances during runtime</p>
+</li>
+<li><p id="_ba63339e-b629-d8ae-327d-c2dd8765eedf">Anti-virus scan during runtime</p>
+</li>
+</ul>
+</li>
+<li><p id="_bd60bcac-db13-e924-70e8-72e4b3e98725">Encryption</p>
+<ul id="_a132d295-f645-90c1-6092-4d68cc984435"><li><p id="_363bacd5-6677-80f3-af6f-c2c8608923f9">Encryption as a service for data in transit and data at rest</p>
+</li>
+</ul>
+</li>
+<li><p id="_f47af4e2-30c0-a169-2b5b-1d82e3745cae">Measures</p>
+<ul id="_2dcb0948-d13b-b0a1-a57d-667a48c86765"><li><p id="_fdaae5c1-4bbf-de03-7c09-72a1012f83d3">Test coverage</p>
+</li>
+<li><p id="_623b059d-cae2-fa6e-35d3-4c666e497bdd">Coverage of unit/integration tests</p>
+</li>
+<li><p id="_db519ecd-2ce1-5269-add2-d4d4a7187e68">Coverage of functional/acceptance tests</p>
+</li>
+<li><p id="_12a8b927-40d6-884b-658c-64d1e41917e5">CIS Benchmark, Compliance Violations</p>
+</li>
+<li><p id="_f7bfa99f-fce4-d119-bed6-524682f734db">Time taken to achieve compliance for a new application</p>
+</li>
+<li><p id="_4e6603c4-2406-272e-4dcd-82153af3f231">Security issues discovered across stages (aspire to zero at production)</p>
+</li>
+<li><p id="_e3166912-7fa2-7f32-3bda-8ee8c928c386">Time to fix security issue</p>
+</li>
+</ul>
+</li>
+</ul>
+</clause>
+</clause>
+</clause>
+
+<clause id="_74e0275b-4374-3dce-170e-8f41f40c2a63" obligation="normative">
+<title id="_d941f2e9-7a82-8bf4-a8e5-721836672489">Relevant guidelines for implementing Reflexive Security</title>
+<clause id="_648d3444-50c8-704b-be98-0f37b6e364de" obligation="normative">
+<title id="_5f4b6e39-1b0d-5578-3593-0f263f988427">General</title>
+<p id="_53df51ab-3b79-ef44-2ad8-aaaa370ff669">This clause provides some guidelines for organizations for the implementation of Reflexive Security. The guidelines below are meant to be indicative, not exhaustive.</p>
+</clause>
+
+<clause id="_90b1461a-4c27-d5b7-75c4-fdd93fab2a87" obligation="normative">
+<title id="_0f008e9b-4e99-b419-0868-0f4061757b17">Culture Shock</title>
+<p id="_9e80b9c2-a62f-32c6-715c-67dbfd3668e7">The goal of DevOps has been to write code and move product into production as fast as possible while maintaining a single source of truth, and removing or sidelining any barriers to their progress. The goal of security has always been too protect the organization internally and externally from access. Individually the goals are admirable until it gets to the point where DevOps deploys insecure software or security delays deployments to the point where the organization’s goals are affected.</p>
+
+<p id="_ba9c491e-d90b-65c0-4123-fa8538464258">Embedding Security into DevOps can be a shock to the traditional system. Plan to deal with the issues of DevOps and Security working closely with common goals and metrics. Plan for the personal effects of automation: changed, lost and or new positions.</p>
+</clause>
+
+<clause id="_38fe50fb-7e02-0bee-d282-2806bacfc2b4" obligation="normative">
+<title id="_920c4455-3ed3-28f0-d789-7895799cec5c">Cross-train</title>
+<p id="_46682526-ada2-fc76-2889-930140e04879">Form an operational security function by selecting key persons that have an interest or background in security from each team and delegate security related tasks to those individuals. Make these persons a representative of the operational security teams.</p>
+
+<p id="_bed77857-36a2-e49a-a440-da39596ca3fe">The operational security teams know exactly what types of operating systems are used, applications are supported for the business, etc. In some organizations, this collaboration involves embedding IT operations specialists within software development teams, thus forming a cross-functional team. This effort may also be combined with a skills matrix.</p>
+</clause>
+
+<clause id="_58408c95-f5e4-8ae6-221a-bd27c8ba401c" obligation="normative">
+<title id="_3af95da9-a303-52bb-cb75-9b36ea0ba2a3">Delegate</title>
+<p id="_fd65ab62-c9fe-e6cd-05b7-e1c5a08675cb">Delegate risk management, maintenance of BCPs etc. to department heads. Freeing up resources of the dedicated security team so they can focus on the security process management and providing the framework(s). The department heads know exactly what they have in house, what risks there are.</p>
+
+<p id="_05d09c63-2c35-c290-19c0-d8f7248f89d0">Reflexive Security is process neutral. Organizations can use Agile, Scrum or any other development methodology. Have security engineers attend daily scrum meetings, make them part of the team.</p>
+</clause>
+
+<clause id="_d800767b-989c-bde4-c24c-a0597a0c7551" obligation="normative">
+<title id="_f72166d8-5c6a-c259-6e5b-a32db316ff9c">Automate with purpose</title>
+<p id="_32795f79-15db-ebbb-279d-d46aa2c88884">One of the primary rules of DevSecOps is to automate early and often with the goal to embed security into the process but don’t try to automate everything at once. Select those areas that will address the greatest risk for automation first. Also choose your automation tools using a selection method including testing that reflects the specifics of your environment.</p>
+</clause>
+</clause>
+
+<clause id="_11310abd-dcc4-44bb-565c-a232ef00dbb4" obligation="normative">
+<title id="_a031d1f5-7ff5-8e03-9d32-103853413f0e">Conclusion</title>
+<p id="_040521cf-83a0-de1a-7a30-a7efb18d3aaa">Reflexive Security is a newer information security management strategy that is dynamic, interactive, holistic, and effective. It represents an integrated culture extrapolated from the amalgamation of DevSecOps, DevOpsSec and SecDevOps concepts and practices, and promotes the exemplary contexts from which those best practices were derived from.</p>
+
+<p id="_6f3caf71-892b-b38b-2a40-1a5163ca09d6">Reflexive Security provides a set of wide-implicating and easily understandable principles that affect an organization’s cybersecurity posture, especially suitable for operating under resource and personnel constraints in today’s fast-paced and challenging cybersecurity landscape.</p>
+
+<p id="_182f3d50-30f0-460a-b6ea-1db6c9bb6ca1">The implementation of DevSecOps, DevOpsSec and SecDevOps concepts and practices in an organization provides an excellent start in attaining the benefits of Reflexive Security. It is also straightforward for organizations that utilize Reflexive Security to formally adopt an ISMS as appropriate, by integrating ISMS processes as part of the Reflexive Security strategy.</p>
+</clause>
+</sections><bibliography><references id="_f69c7cdf-ff9e-746f-084c-91b72ecc8012" normative="true" obligation="informative">
+<title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+
+
+<bibitem id="_1853fd47-3860-1701-05a4-5798923bb3b9" type="standard" schema-version="v1.5.6" anchor="iso27000">
+  <fetched>2026-11-11</fetched>
+  
+<title language="en" script="Latn" type="title-intro">Information technology</title>
+
+  
+<title language="en" script="Latn" type="title-main">Security techniques</title>
+
+  
+<title language="en" script="Latn" type="title-part">Information security management systems — Overview and vocabulary</title>
+
+  
+<title language="en" script="Latn" type="main">Information technology — Security techniques — Information security management systems — Overview and vocabulary</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Technologies de l’information</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Techniques de sécurité</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Systèmes de management de la sécurité de l’information — Vue d’ensemble et vocabulaire</title>
+
+  
+<title language="fr" script="Latn" type="main">Technologies de l’information — Techniques de sécurité — Systèmes de management de la sécurité de l’information — Vue d’ensemble et vocabulaire</title>
+
+  <uri type="src">https://www.iso.org/standard/73906.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:73906:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/07/39/73906.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO/IEC 27000:2018</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 27000</docidentifier>
+  <docidentifier type="iso-reference">ISO/IEC 27000:2018(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso-iec:27000:stage-95.99</docidentifier>
+  <docnumber>27000</docnumber>
+  <date type="published">
+    <on>2018-02-07</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Electrotechnical Commission</name>
+
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="IEC">
+        
+<name>Information security, cybersecurity and privacy protection</name>
+
+        <identifier>ISO/IEC JTC 1/SC 27</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>5</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO/IEC 27000:2018 provides the overview of information security management systems (ISMS). It also provides terms and definitions commonly used in the ISMS family of standards. This document is applicable to all types and sizes of organization (e.g. commercial enterprises, government agencies, not-for-profit organizations). The terms and definitions provided in this document — cover commonly used terms and definitions in the ISMS family of standards; — do not cover all terms and definitions applied within the ISMS family of standards; and — do not limit the ISMS family of standards in defining new terms for use.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>ISO/IEC</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 27000:2016</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 27000:2016</docidentifier>
+      <date type="published">
+        <on>2016-02-15</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem>
+</references></bibliography>
+</metanorma>
